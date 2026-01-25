@@ -30,7 +30,7 @@ Not much here to say. I downloaded [an app](https://dripmobile.app/) to help me 
 
 ## 📖 Read 10 pages a day
 
-[I already read basically every day](https://hardcover.app/@benslv/stats) so this isn't much of an additional to my daily routine. I will be reading [*Dust of Dreams*](https://hardcover.app/books/dust-of-dreams) by Steven Erikson, and I've actually being a little naughty and committed to *17 pages* (😱) a day so that the end of the book will nicely coincide with the end of 75 Soft. It's definitely been a goal of mine to read *more* each day, so I'm really happy this is part of the challenge.
+[I already read basically every day](https://hardcover.app/@bens/stats) so this isn't much of an additional to my daily routine. I will be reading [*Dust of Dreams*](https://hardcover.app/books/dust-of-dreams) by Steven Erikson, and I've actually being a little naughty and committed to *17 pages* (😱) a day so that the end of the book will nicely coincide with the end of 75 Soft. It's definitely been a goal of mine to read *more* each day, so I'm really happy this is part of the challenge.
 
 ---
 
