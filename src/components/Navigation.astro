@@ -1,4 +1,4 @@
-<footer>
+<div>
 	<a href="/" id="home-link"><b>Ben Silverman</b></a>
 
 	<nav>
@@ -6,7 +6,7 @@
 		<a href="/now">/now</a>
 		<a href="/uses">/uses</a>
 	</nav>
-</footer>
+</div>
 
 <style>
 	#home-link {
@@ -14,16 +14,18 @@
 		text-decoration: none;
 	}
 
-	footer {
+	div {
+		@media screen and (min-width: 768px) {
+			position: sticky;
+			height: max-content;
+			top: 0;
+		}
+
 		width: 100%;
-		padding: 0 1rem;
-		padding-top: 2rem;
+		padding: 1rem;
 		margin: 0 auto;
-		margin-top: 2rem;
 
 		max-width: var(--wrap-width);
-
-		border-top: 1px solid var(--sand-6);
 	}
 	nav {
 		display: grid;
