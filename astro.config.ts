@@ -12,4 +12,5 @@ export default defineConfig({
 	integrations: [react(), markdoc(), keystatic()],
 	site: "https://bensilverman.co.uk",
 	adapter: netlify(),
+	prefetch: true,
 });

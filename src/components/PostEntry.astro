@@ -9,7 +9,7 @@ const { title, slug, date } = Astro.props;
 ---
 
 <div class="container">
-	<a class="link" href={slug}>
+	<a class="link" href={slug} data-astro-prefetch>
 		{title}
 	</a>
 	{date && <span class="date">{date.toISOString().slice(0, 10)}</span>}
