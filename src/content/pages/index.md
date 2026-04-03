@@ -13,7 +13,7 @@ Here are some of the things I've made:
 
 📰 [**instapaper-ts**](https://github.com/benslv/instapaper-ts) is a TypeScript client for the [Instapaper](https://instapaper.com) API
 
-**📚** [**marks**](https://marks.bensilverman.co.uk) is a custom frontend for Instapaper, *powered by marks!*
+**📚** [**marks**](https://marks.bensilverman.co.uk) is a custom frontend for Instapaper, *powered by instapaper-ts!*
 
 You can see more of my projects on [my GitHub](https://github.com/benslv) :)
 
