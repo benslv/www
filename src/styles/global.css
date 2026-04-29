@@ -1,6 +1,3 @@
-@import "@radix-ui/colors/sand.css";
-@import "@radix-ui/colors/brown.css";
-
 @font-face {
 	font-family: "JetBrains Mono";
 	src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
@@ -47,11 +44,7 @@ html {
 }
 
 body {
-	font-weight: 400;
-
-	background-color: var(--brown-2);
-	color: var(--sand-12);
-	line-height: 1.5;
+	line-height: 1.25;
 	-webkit-font-smoothing: antialiased;
 	font-family:
 		"Atkinson Hyperlegible Next",
@@ -127,15 +120,7 @@ p {
 a {
 	font-weight: 500;
 	color: inherit;
-	color: var(--brown-11);
-
-	text-decoration-color: var(--brown-6);
 	text-decoration-thickness: 2px;
-
-	&:hover {
-		color: var(--brown-10);
-		text-decoration-color: var(--brown-5);
-	}
 }
 
 pre {
@@ -150,32 +135,21 @@ code {
 	font-family: "JetBrains Mono", monospace;
 
 	:not(pre) > & {
-		color: var(--brown-12);
-		background-color: var(--brown-3);
-		border: 1px solid var(--brown-6);
 		padding: 1px 2px;
 		border-radius: 4px;
 	}
 }
 
 blockquote {
-	background-color: var(--brown-3);
-	border: 1px solid var(--brown-6);
 	border-radius: 4px;
 	padding: 0.5rem;
 
 	p {
-		color: var(--brown-12);
 		margin: 0;
 
 		+ p {
 			margin-top: 1rem;
 		}
-	}
-
-	code {
-		background: var(--brown-2);
-		border-color: var(--brown-5);
 	}
 }
 

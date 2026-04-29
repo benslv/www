@@ -7,13 +7,10 @@ Hi, I'm Ben! I'm a software engineer at [Starling Bank](https://starlingbank.com
 
 Here are some of the things I've made:
 
-🎧 [**insync**](https://insync.rocks) is a smart playlist generator for Spotify
-
-🥬 [**lettucewatch**](https://lettuce.watch) is a real-time, collaborative movie picker for friends
-
-📰 [**instapaper-ts**](https://github.com/benslv/instapaper-ts) is a TypeScript client for the [Instapaper](https://instapaper.com) API
-
-**📚** [**marks**](https://marks.bensilverman.co.uk) is a custom frontend for Instapaper, *powered by instapaper-ts!*
+- [**insync**](https://insync.rocks) is a smart playlist generator for Spotify
+- [**lettucewatch**](https://lettuce.watch) is a real-time, collaborative movie picker for friends
+- [**instapaper-ts**](https://github.com/benslv/instapaper-ts) is a TypeScript client for the [Instapaper](https://instapaper.com) API
+- [**marks**](https://marks.bensilverman.co.uk) is a custom frontend for Instapaper, *powered by instapaper-ts!*
 
 You can see more of my projects on [my GitHub](https://github.com/benslv) :)
 

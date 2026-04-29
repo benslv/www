@@ -18,6 +18,7 @@ export default config({
 			schema: {
 				title: fields.slug({ name: { label: "Title" } }),
 				date: fields.date({ label: "Date" }),
+				image: fields.text({ label: "Image" }),
 				draft: fields.checkbox({ label: "Draft" }),
 				body: fields.markdoc({
 					label: "Body",

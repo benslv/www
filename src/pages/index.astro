@@ -1,12 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import { getEntry, render } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
+import header from "./src/images/header.png";
 const entry = await getEntry("pages", "index")!;
 
 const { Content } = await render(entry);
 ---
 
 <Layout>
+	<Image src={header} alt="" height={350} style="margin: 0 auto" />
 	<Content />
 </Layout>

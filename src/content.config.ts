@@ -8,6 +8,7 @@ export const collections = {
 			title: z.string(),
 			date: z.date(),
 			draft: z.boolean(),
+			image: z.string().optional(),
 		}),
 	}),
 	pages: defineCollection({

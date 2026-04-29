@@ -1,6 +1,7 @@
 ---
 title: Who will I be in 75 days?
 date: 2026-01-07
+image: /src/images/75-soft.png
 draft: false
 ---
 If you're reading this after the 20th March, 2026, I'll be a completely different person...I think? Or maybe I'll be me, but better? Or the same person in almost every day but very slightly different in one extremely important but equally intangible factor? Who knows!
