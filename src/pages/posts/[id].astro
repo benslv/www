@@ -1,6 +1,5 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
@@ -20,18 +19,14 @@ export const getStaticPaths = (async () => {
 const { post } = Astro.props;
 
 const { Content } = await render(post);
-
-const images = import.meta.glob<{ default: ImageMetadata }>(
-	"/src/images/*.{jpeg,jpg,png,gif}",
-);
-
-if (post.data.image && !images[post.data.image])
-	throw new Error(
-		`"${post.data.image}" does not exist in glob: "src/images/*.{jpeg,jpg,png,gif}"`,
-	);
 ---
 
-<Layout title={post.data.title}>
-	{post.data.image ? <Image src={images[post.data.image]()} alt="" /> : null}
+<Layout title={post.data.title} image={post.data.image}>
 	<Content />
 </Layout>
+
+<style>
+	#featureImage {
+		margin: 0 auto;
+	}
+</style>

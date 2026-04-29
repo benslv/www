@@ -1,5 +1,6 @@
 ---
 title: Index
+image: /src/images/header.png
 ---
 Hi, I'm Ben! I'm a software engineer at [Starling Bank](https://starlingbank.com), currently living in London. If I'm not at my computer, you can probably find me at the gym, [reading](https://hardcover.app/@bens), or playing saxophone 🎷
 

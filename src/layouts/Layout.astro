@@ -1,8 +1,19 @@
 ---
-const { title } = Astro.props;
+import { Image } from "astro:assets";
 
 import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
+
+const { title, image } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/images/*.{jpeg,jpg,png,gif}",
+);
+
+if (image && !images[image])
+	throw new Error(
+		`"${image}" does not exist in glob: "src/images/*.{jpeg,jpg,png,gif}"`,
+	);
 ---
 
 <html lang="en">
@@ -38,6 +49,16 @@ import "../styles/global.css";
 	<body>
 		<Navigation />
 		<article>
+			{
+				image && (
+					<Image
+						id="featureImage"
+						src={images[image]()}
+						alt=""
+						height={250}
+					/>
+				)
+			}
 			{title && <h1>{title}</h1>}
 			<slot />
 		</article>
@@ -49,6 +70,10 @@ import "../styles/global.css";
 			padding: 0 1rem;
 			padding-top: 2rem;
 			width: 100%;
+		}
+
+		#featureImage {
+			margin: 0 auto;
 		}
 	</style>
 </html>

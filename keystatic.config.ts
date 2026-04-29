@@ -40,6 +40,7 @@ export default config({
 					label: "Body",
 					extension: "md",
 				}),
+				image: fields.text({ label: "Image" }),
 			},
 		}),
 	},

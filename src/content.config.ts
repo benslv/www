@@ -15,6 +15,7 @@ export const collections = {
 		loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
 		schema: z.object({
 			title: z.string(),
+			image: z.string().optional(),
 		}),
 	}),
 };
