@@ -3,7 +3,6 @@ import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
-import "../../styles/global.css";
 
 export const getStaticPaths = (async () => {
 	const posts = await getCollection("posts", ({ data }) =>
