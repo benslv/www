@@ -15,41 +15,18 @@ export default defineConfig({
 	prefetch: true,
 	fonts: [
 		{
-			provider: fontProviders.local(),
-			name: "Atkinson Hyperlegible Next",
-			cssVariable: "--atkinson-hyperlegible-next",
-			options: {
-				variants: [
-					{
-						src: [
-							"./src/assets/fonts/AtkinsonHyperlegibleNext-VariableFont_wght.ttf",
-						],
-						weight: "100 1000",
-						style: "normal",
-					},
-					{
-						src: [
-							"./src/assets/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.ttf",
-						],
-						weight: "100 1000",
-						style: "italic",
-					},
-				],
-			},
+			provider: fontProviders.fontsource(),
+			name: "SN Pro",
+			cssVariable: "--sn-pro",
+			weights: ["400 700"],
+			styles: ["normal", "italic"],
 		},
 		{
-			provider: fontProviders.local(),
-			name: "JetBrains Mono Regular",
+			provider: fontProviders.fontsource(),
+			name: "JetBrains Mono",
 			cssVariable: "--jetbrains-mono",
-			options: {
-				variants: [
-					{
-						src: ["./src/assets/fonts/JetBrainsMono-Regular.woff2"],
-						weight: "normal",
-						style: "normal",
-					},
-				],
-			},
+			weights: ["400"],
+			styles: ["normal"],
 		},
 	],
 });
