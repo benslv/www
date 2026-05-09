@@ -1,28 +1,31 @@
-<div>
+<nav>
 	<a href="/" id="home-link" data-astro-prefetch><b>Ben Silverman</b></a>
 
-	<nav>
+	<div>
 		<a href="/posts" data-astro-prefetch>/posts</a>
 		<a href="/now" data-astro-prefetch>/now</a>
 		<a href="/uses" data-astro-prefetch>/uses</a>
-	</nav>
-</div>
+	</div>
+</nav>
 
 <style>
 	#home-link {
 		text-decoration: none;
 	}
 
-	div {
+	nav {
 		width: 100%;
-		color: white;
-		padding: 2px 4px;
-		margin: 0 auto;
+		padding: 2rem 0;
+		margin-bottom: 1rem;
 
 		max-width: var(--wrap-width);
 
 		display: flex;
 		justify-content: space-between;
-		background: #000;
+	}
+
+	div {
+		display: flex;
+		column-gap: 1rem;
 	}
 </style>

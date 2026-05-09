@@ -48,35 +48,29 @@ if (image && !images[image])
 		<Font cssVariable="--sn-pro" preload />
 		<Font cssVariable="--jetbrains-mono" preload />
 		<GlobalCSS />
-		<style>
-			article {
-				max-width: var(--wrap-width);
-				margin: 0 auto;
-				padding: 0 1rem;
-				padding-top: 2rem;
-				width: 100%;
-			}
-
-			#featureImage {
-				margin: 0 auto;
-			}
-		</style>
 	</head>
 	<body>
-		<Navigation />
-		<article>
-			{
-				image && (
-					<Image
-						id="featureImage"
-						src={images[image]()}
-						alt=""
-						height={250}
-					/>
-				)
-			}
-			{title && <h1>{title}</h1>}
-			<slot />
-		</article>
+		<div class="container">
+			<Navigation />
+			<main>
+				<article>
+					{
+						image && (
+							<Image src={images[image]()} alt="" height={250} />
+						)
+					}
+					{title && <h1>{title}</h1>}
+					<slot />
+				</article>
+			</main>
+		</div>
 	</body>
 </html>
+
+<style>
+	.container {
+		--gutter-width: 2rem;
+		width: min(var(--wrap-width), 100% - var(--gutter-width));
+		margin: 0 auto;
+	}
+</style>
