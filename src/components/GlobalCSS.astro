@@ -1,5 +1,6 @@
 ---
-import "@radix-ui/colors/slate.css";
+import "@radix-ui/colors/jade.css";
+import "@radix-ui/colors/sage.css";
 ---
 
 <style is:global>
@@ -80,8 +81,8 @@ import "@radix-ui/colors/slate.css";
 		padding: 0;
 		min-height: 100svh;
 
-		background-color: var(--slate-1);
-		color: var(--slate-12);
+		background-color: var(--sage-1);
+		color: var(--sage-12);
 	}
 
 	body {
@@ -119,26 +120,24 @@ import "@radix-ui/colors/slate.css";
 		margin: 0.5rem 0;
 	}
 
-	/* h1 {
-		font-size: 2rem;
-		margin-bottom: 1rem;
-	}
-
-	h2,
-	h3 {
-		margin-top: 1.2rem;
-		margin-bottom: 0.5rem;
-		font-weight: bolder;
-	}
-
-	p {
-		margin: 1em 0;
-	} */
-
 	a {
-		font-weight: 500;
 		color: inherit;
+		color: var(--jade-11);
+		text-decoration-color: var(--jade-6);
 		text-decoration-thickness: 2px;
+
+		transition:
+			color 0.15s,
+			text-decoration-color 0.15s;
+
+		&:hover {
+			text-decoration-color: var(--jade-9);
+			color: var(--jade-12);
+
+			transition:
+				color 0s,
+				text-decoration-color 0s;
+		}
 	}
 
 	pre {
@@ -168,6 +167,24 @@ import "@radix-ui/colors/slate.css";
 			+ p {
 				margin-top: 1rem;
 			}
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+		line-height: 1.2;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 1em;
+
+		ul + & {
+			margin-top: 1em;
 		}
 	}
 </style>
