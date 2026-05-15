@@ -1,5 +1,5 @@
 ---
-name: Aquaman and the Lost Kingdom
+name: "Aquaman and the Lost Kingdom"
 year: 2023
 rating: 2
 tags: null

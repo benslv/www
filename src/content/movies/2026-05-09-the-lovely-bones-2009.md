@@ -1,5 +1,5 @@
 ---
-name: The Lovely Bones
+name: "The Lovely Bones"
 year: 2009
 rating: 3
 tags: plex,julia

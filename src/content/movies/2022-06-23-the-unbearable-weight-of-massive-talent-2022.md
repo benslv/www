@@ -1,5 +1,5 @@
 ---
-name: The Unbearable Weight of Massive Talent
+name: "The Unbearable Weight of Massive Talent"
 year: 2022
 rating: 2.5
 tags: null

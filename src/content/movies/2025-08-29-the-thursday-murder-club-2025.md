@@ -1,5 +1,5 @@
 ---
-name: The Thursday Murder Club
+name: "The Thursday Murder Club"
 year: 2025
 rating: 2.5
 tags: oli,picturehouse central

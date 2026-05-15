@@ -1,5 +1,5 @@
 ---
-name: H2O: The Molecule that Made Us
+name: "H2O: The Molecule that Made Us"
 year: 2020
 rating: 2.5
 tags: null

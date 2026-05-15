@@ -1,5 +1,5 @@
 ---
-name: There Will Be Blood
+name: "There Will Be Blood"
 year: 2007
 rating: 3.5
 tags: null

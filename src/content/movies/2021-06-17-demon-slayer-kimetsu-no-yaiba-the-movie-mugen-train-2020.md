@@ -1,5 +1,5 @@
 ---
-name: Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train
+name: "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train"
 year: 2020
 rating: 4
 tags: null

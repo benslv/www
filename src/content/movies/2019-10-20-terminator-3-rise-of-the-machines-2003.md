@@ -1,5 +1,5 @@
 ---
-name: Terminator 3: Rise of the Machines
+name: "Terminator 3: Rise of the Machines"
 year: 2003
 rating: 2.5
 tags: null

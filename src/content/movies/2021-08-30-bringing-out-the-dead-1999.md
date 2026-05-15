@@ -1,5 +1,5 @@
 ---
-name: Bringing Out the Dead
+name: "Bringing Out the Dead"
 year: 1999
 rating: 3.5
 tags: null

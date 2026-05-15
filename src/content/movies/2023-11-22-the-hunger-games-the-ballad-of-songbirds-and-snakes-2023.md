@@ -1,5 +1,5 @@
 ---
-name: The Hunger Games: The Ballad of Songbirds & Snakes
+name: "The Hunger Games: The Ballad of Songbirds & Snakes"
 year: 2023
 rating: 2
 tags: vue westfield,julia

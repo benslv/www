@@ -1,5 +1,5 @@
 ---
-name: The Boy and the Heron
+name: "The Boy and the Heron"
 year: 2023
 rating: 3
 tags: julia,barbican

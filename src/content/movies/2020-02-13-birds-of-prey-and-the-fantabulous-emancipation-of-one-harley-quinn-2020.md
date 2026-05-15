@@ -1,5 +1,5 @@
 ---
-name: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+name: "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)"
 year: 2020
 rating: 4
 tags: null

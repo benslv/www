@@ -1,5 +1,5 @@
 ---
-name: Stranger Than Fiction
+name: "Stranger Than Fiction"
 year: 2006
 rating: 4
 tags: null

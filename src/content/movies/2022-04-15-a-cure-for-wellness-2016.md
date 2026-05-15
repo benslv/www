@@ -1,5 +1,5 @@
 ---
-name: A Cure for Wellness
+name: "A Cure for Wellness"
 year: 2016
 rating: 3
 tags: null

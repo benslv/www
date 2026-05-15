@@ -1,5 +1,5 @@
 ---
-name: First Reformed
+name: "First Reformed"
 year: 2017
 rating: 3.5
 tags: plex

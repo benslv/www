@@ -1,5 +1,5 @@
 ---
-name: The Rat Catcher
+name: "The Rat Catcher"
 year: 2023
 rating: 3.5
 tags: null

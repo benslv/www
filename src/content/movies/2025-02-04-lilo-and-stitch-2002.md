@@ -1,5 +1,5 @@
 ---
-name: Lilo & Stitch
+name: "Lilo & Stitch"
 year: 2002
 rating: 4.5
 tags: julia,disney+

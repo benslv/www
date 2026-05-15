@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: USS Callister – Into Infinity
+name: "Black Mirror: USS Callister – Into Infinity"
 year: 2025
 rating: 3.5
 tags: netflix

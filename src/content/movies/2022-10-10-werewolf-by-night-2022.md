@@ -1,5 +1,5 @@
 ---
-name: Werewolf by Night
+name: "Werewolf by Night"
 year: 2022
 rating: 3.5
 tags: null

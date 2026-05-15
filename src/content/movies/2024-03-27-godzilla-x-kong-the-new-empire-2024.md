@@ -1,5 +1,5 @@
 ---
-name: Godzilla × Kong: The New Empire
+name: "Godzilla × Kong: The New Empire"
 year: 2024
 rating: 2
 tags: cineworld leicester square

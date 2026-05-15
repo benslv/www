@@ -1,5 +1,5 @@
 ---
-name: How to Train Your Dragon
+name: "How to Train Your Dragon"
 year: 2010
 rating: 4
 tags: null

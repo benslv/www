@@ -1,5 +1,5 @@
 ---
-name: The Accountant
+name: "The Accountant"
 year: 2016
 rating: 3.5
 tags: plex

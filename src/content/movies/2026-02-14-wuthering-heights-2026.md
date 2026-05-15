@@ -1,5 +1,5 @@
 ---
-name: Wuthering Heights
+name: "Wuthering Heights"
 year: 2026
 rating: 2
 tags: julia,curzon camden

@@ -1,5 +1,5 @@
 ---
-name: The Midnight Sky
+name: "The Midnight Sky"
 year: 2020
 rating: 2.5
 tags: netflix

@@ -1,5 +1,5 @@
 ---
-name: A Man Called Otto
+name: "A Man Called Otto"
 year: 2022
 rating: 3.5
 tags: netflix,mum,dad

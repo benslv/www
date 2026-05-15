@@ -1,5 +1,5 @@
 ---
-name: Burn After Reading
+name: "Burn After Reading"
 year: 2008
 rating: 3.5
 tags: null

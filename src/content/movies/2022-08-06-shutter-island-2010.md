@@ -1,5 +1,5 @@
 ---
-name: Shutter Island
+name: "Shutter Island"
 year: 2010
 rating: 4.5
 tags: null

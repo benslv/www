@@ -1,5 +1,5 @@
 ---
-name: Dream Scenario
+name: "Dream Scenario"
 year: 2023
 rating: 3.5
 tags: picturehouse finsbury,julia

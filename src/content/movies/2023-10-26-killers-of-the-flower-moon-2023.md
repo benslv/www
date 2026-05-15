@@ -1,5 +1,5 @@
 ---
-name: Killers of the Flower Moon
+name: "Killers of the Flower Moon"
 year: 2023
 rating: 4.5
 tags: bfi imax

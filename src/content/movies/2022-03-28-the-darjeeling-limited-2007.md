@@ -1,5 +1,5 @@
 ---
-name: The Darjeeling Limited
+name: "The Darjeeling Limited"
 year: 2007
 rating: 3.5
 tags: null

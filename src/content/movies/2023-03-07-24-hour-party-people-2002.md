@@ -1,5 +1,5 @@
 ---
-name: 24 Hour Party People
+name: "24 Hour Party People"
 year: 2002
 rating: 3.5
 tags: null

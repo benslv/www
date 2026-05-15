@@ -1,5 +1,5 @@
 ---
-name: American Fiction
+name: "American Fiction"
 year: 2023
 rating: 3.5
 tags: julia,curzon mayfair

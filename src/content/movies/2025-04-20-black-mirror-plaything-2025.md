@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Plaything
+name: "Black Mirror: Plaything"
 year: 2025
 rating: 3.5
 tags: netflix

@@ -1,5 +1,5 @@
 ---
-name: A.I. Artificial Intelligence
+name: "A.I. Artificial Intelligence"
 year: 2001
 rating: 4
 tags: plex

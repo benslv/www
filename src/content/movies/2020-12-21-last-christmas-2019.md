@@ -1,5 +1,5 @@
 ---
-name: Last Christmas
+name: "Last Christmas"
 year: 2019
 rating: 3
 tags: null

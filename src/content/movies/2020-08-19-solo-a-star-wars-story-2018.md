@@ -1,5 +1,5 @@
 ---
-name: Solo: A Star Wars Story
+name: "Solo: A Star Wars Story"
 year: 2018
 rating: 2.5
 tags: null

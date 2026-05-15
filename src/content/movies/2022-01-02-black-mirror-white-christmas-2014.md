@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: White Christmas
+name: "Black Mirror: White Christmas"
 year: 2014
 rating: 4
 tags: null

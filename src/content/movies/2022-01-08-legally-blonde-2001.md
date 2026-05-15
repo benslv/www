@@ -1,5 +1,5 @@
 ---
-name: Legally Blonde
+name: "Legally Blonde"
 year: 2001
 rating: 3.5
 tags: null

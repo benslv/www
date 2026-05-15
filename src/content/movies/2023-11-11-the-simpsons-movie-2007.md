@@ -1,5 +1,5 @@
 ---
-name: The Simpsons Movie
+name: "The Simpsons Movie"
 year: 2007
 rating: 4
 tags: julia

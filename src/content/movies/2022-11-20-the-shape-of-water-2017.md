@@ -1,5 +1,5 @@
 ---
-name: The Shape of Water
+name: "The Shape of Water"
 year: 2017
 rating: 3.5
 tags: null

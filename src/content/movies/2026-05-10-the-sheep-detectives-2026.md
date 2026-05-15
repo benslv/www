@@ -1,5 +1,5 @@
 ---
-name: The Sheep Detectives
+name: "The Sheep Detectives"
 year: 2026
 rating: 3.5
 tags: julia,curzon camden

@@ -1,5 +1,5 @@
 ---
-name: War for the Planet of the Apes
+name: "War for the Planet of the Apes"
 year: 2017
 rating: 3.5
 tags: null

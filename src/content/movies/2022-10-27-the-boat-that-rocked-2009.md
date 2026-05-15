@@ -1,5 +1,5 @@
 ---
-name: The Boat That Rocked
+name: "The Boat That Rocked"
 year: 2009
 rating: 3.5
 tags: null

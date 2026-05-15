@@ -1,5 +1,5 @@
 ---
-name: Predator: Badlands
+name: "Predator: Badlands"
 year: 2025
 rating: 2.5
 tags: plex

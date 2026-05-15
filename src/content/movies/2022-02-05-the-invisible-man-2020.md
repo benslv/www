@@ -1,5 +1,5 @@
 ---
-name: The Invisible Man
+name: "The Invisible Man"
 year: 2020
 rating: 4.5
 tags: null

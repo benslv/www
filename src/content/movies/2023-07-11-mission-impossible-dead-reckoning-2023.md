@@ -1,5 +1,5 @@
 ---
-name: Mission: Impossible – Dead Reckoning
+name: "Mission: Impossible – Dead Reckoning"
 year: 2023
 rating: 4
 tags: cineworld crawley

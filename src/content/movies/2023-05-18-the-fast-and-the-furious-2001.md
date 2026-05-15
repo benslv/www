@@ -1,5 +1,5 @@
 ---
-name: The Fast and the Furious
+name: "The Fast and the Furious"
 year: 2001
 rating: 3.5
 tags: null

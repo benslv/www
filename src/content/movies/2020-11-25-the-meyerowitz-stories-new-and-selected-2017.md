@@ -1,5 +1,5 @@
 ---
-name: The Meyerowitz Stories (New and Selected)
+name: "The Meyerowitz Stories (New and Selected)"
 year: 2017
 rating: 4.5
 tags: plex

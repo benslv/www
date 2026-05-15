@@ -1,5 +1,5 @@
 ---
-name: A Charlie Brown Christmas
+name: "A Charlie Brown Christmas"
 year: 1965
 rating: 2
 tags: null

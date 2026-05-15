@@ -1,5 +1,5 @@
 ---
-name: Tangled Ever After
+name: "Tangled Ever After"
 year: 2012
 rating: 3.5
 tags: null

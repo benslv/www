@@ -1,5 +1,5 @@
 ---
-name: Captain Phillips
+name: "Captain Phillips"
 year: 2013
 rating: 5
 tags: null

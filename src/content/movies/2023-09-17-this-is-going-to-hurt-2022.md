@@ -1,5 +1,5 @@
 ---
-name: This Is Going to Hurt
+name: "This Is Going to Hurt"
 year: 2022
 rating: 4.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: The Princess Bride
+name: "The Princess Bride"
 year: 1987
 rating: 3
 tags: plex,dad,mum,oli

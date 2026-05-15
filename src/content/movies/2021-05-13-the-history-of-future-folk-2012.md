@@ -1,5 +1,5 @@
 ---
-name: The History of Future Folk
+name: "The History of Future Folk"
 year: 2012
 rating: 2.5
 tags: null

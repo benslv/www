@@ -1,5 +1,5 @@
 ---
-name: All of Us Strangers
+name: "All of Us Strangers"
 year: 2023
 rating: 4
 tags: picturehouse central,julia

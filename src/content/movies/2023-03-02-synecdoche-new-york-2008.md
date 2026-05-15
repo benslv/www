@@ -1,5 +1,5 @@
 ---
-name: Synecdoche, New York
+name: "Synecdoche, New York"
 year: 2008
 rating: 4
 tags: null

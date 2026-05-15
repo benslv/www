@@ -1,5 +1,5 @@
 ---
-name: Indiana Jones and the Dial of Destiny
+name: "Indiana Jones and the Dial of Destiny"
 year: 2023
 rating: 3
 tags: the light redhill

@@ -1,5 +1,5 @@
 ---
-name: Good Will Hunting
+name: "Good Will Hunting"
 year: 1997
 rating: 4
 tags: netflix

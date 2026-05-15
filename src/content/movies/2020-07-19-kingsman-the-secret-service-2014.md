@@ -1,5 +1,5 @@
 ---
-name: Kingsman: The Secret Service
+name: "Kingsman: The Secret Service"
 year: 2014
 rating: 3.5
 tags: null

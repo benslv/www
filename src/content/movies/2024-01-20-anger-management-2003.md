@@ -1,5 +1,5 @@
 ---
-name: Anger Management
+name: "Anger Management"
 year: 2003
 rating: 3
 tags: julia

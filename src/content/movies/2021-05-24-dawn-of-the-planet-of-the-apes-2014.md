@@ -1,5 +1,5 @@
 ---
-name: Dawn of the Planet of the Apes
+name: "Dawn of the Planet of the Apes"
 year: 2014
 rating: 3.5
 tags: null

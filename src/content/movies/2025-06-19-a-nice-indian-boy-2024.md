@@ -1,5 +1,5 @@
 ---
-name: A Nice Indian Boy
+name: "A Nice Indian Boy"
 year: 2024
 rating: 3
 tags: julia

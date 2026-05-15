@@ -1,5 +1,5 @@
 ---
-name: The Last Repair Shop
+name: "The Last Repair Shop"
 year: 2023
 rating: 0
 tags: null

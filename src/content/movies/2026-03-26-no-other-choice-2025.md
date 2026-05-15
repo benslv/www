@@ -1,5 +1,5 @@
 ---
-name: No Other Choice
+name: "No Other Choice"
 year: 2025
 rating: 4.5
 tags: julia,picturehouse central

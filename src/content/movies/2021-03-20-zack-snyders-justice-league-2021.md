@@ -1,5 +1,5 @@
 ---
-name: Zack Snyder's Justice League
+name: "Zack Snyder's Justice League"
 year: 2021
 rating: 4
 tags: null

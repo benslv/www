@@ -1,5 +1,5 @@
 ---
-name: Bend It Like Beckham
+name: "Bend It Like Beckham"
 year: 2002
 rating: 2.5
 tags: julia,plex,lucy,amelia

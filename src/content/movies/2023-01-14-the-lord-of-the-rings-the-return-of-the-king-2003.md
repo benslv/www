@@ -1,5 +1,5 @@
 ---
-name: The Lord of the Rings: The Return of the King
+name: "The Lord of the Rings: The Return of the King"
 year: 2003
 rating: 4
 tags: null

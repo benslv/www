@@ -1,5 +1,5 @@
 ---
-name: The Baltimorons
+name: "The Baltimorons"
 year: 2025
 rating: 3
 tags: julia,dad,mum,plex

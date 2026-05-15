@@ -1,5 +1,5 @@
 ---
-name: The Social Dilemma
+name: "The Social Dilemma"
 year: 2020
 rating: 3.5
 tags: netflix

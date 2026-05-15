@@ -1,5 +1,5 @@
 ---
-name: Requiem for a Dream
+name: "Requiem for a Dream"
 year: 2000
 rating: 3.5
 tags: null

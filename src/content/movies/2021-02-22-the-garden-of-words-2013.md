@@ -1,5 +1,5 @@
 ---
-name: The Garden of Words
+name: "The Garden of Words"
 year: 2013
 rating: 4
 tags: plex

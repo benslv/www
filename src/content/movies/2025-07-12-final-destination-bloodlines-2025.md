@@ -1,5 +1,5 @@
 ---
-name: Final Destination Bloodlines
+name: "Final Destination Bloodlines"
 year: 2025
 rating: 3
 tags: julia,connie,plex

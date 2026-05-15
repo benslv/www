@@ -1,5 +1,5 @@
 ---
-name: Much Ado About Nothing
+name: "Much Ado About Nothing"
 year: 1993
 rating: 3.5
 tags: julia,plex

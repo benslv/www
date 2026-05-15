@@ -1,5 +1,5 @@
 ---
-name: The Ballad of Wallis Island
+name: "The Ballad of Wallis Island"
 year: 2025
 rating: 4
 tags: plex,dad,mum

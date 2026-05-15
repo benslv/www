@@ -1,5 +1,5 @@
 ---
-name: Fantastic Mr. Fox
+name: "Fantastic Mr. Fox"
 year: 2009
 rating: 5
 tags: null

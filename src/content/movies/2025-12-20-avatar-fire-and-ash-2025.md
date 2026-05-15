@@ -1,5 +1,5 @@
 ---
-name: Avatar: Fire and Ash
+name: "Avatar: Fire and Ash"
 year: 2025
 rating: 3
 tags: manu,jordan,odeon west end

@@ -1,5 +1,5 @@
 ---
-name: The Wolf of Snow Hollow
+name: "The Wolf of Snow Hollow"
 year: 2020
 rating: 3
 tags: null

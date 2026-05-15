@@ -1,5 +1,5 @@
 ---
-name: Shang-Chi and the Legend of the Ten Rings
+name: "Shang-Chi and the Legend of the Ten Rings"
 year: 2021
 rating: 3.5
 tags: everyman york

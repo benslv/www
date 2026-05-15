@@ -1,5 +1,5 @@
 ---
-name: Maze Runner: The Death Cure
+name: "Maze Runner: The Death Cure"
 year: 2018
 rating: 2
 tags: null

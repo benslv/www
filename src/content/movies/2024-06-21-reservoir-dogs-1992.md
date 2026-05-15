@@ -1,5 +1,5 @@
 ---
-name: Reservoir Dogs
+name: "Reservoir Dogs"
 year: 1992
 rating: 3
 tags: simon,luke,prime

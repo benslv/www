@@ -1,5 +1,5 @@
 ---
-name: The Wrong Trousers
+name: "The Wrong Trousers"
 year: 1993
 rating: 5
 tags: julia,oli

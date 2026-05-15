@@ -1,5 +1,5 @@
 ---
-name: Operation Mincemeat
+name: "Operation Mincemeat"
 year: 2021
 rating: 3
 tags: julia,plex

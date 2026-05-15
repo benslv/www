@@ -1,5 +1,5 @@
 ---
-name: Shaun of the Dead
+name: "Shaun of the Dead"
 year: 2004
 rating: 4
 tags: julia,plex

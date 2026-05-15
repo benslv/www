@@ -1,5 +1,5 @@
 ---
-name: Hidden Figures
+name: "Hidden Figures"
 year: 2016
 rating: 3.5
 tags: null

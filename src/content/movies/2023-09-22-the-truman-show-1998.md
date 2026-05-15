@@ -1,5 +1,5 @@
 ---
-name: The Truman Show
+name: "The Truman Show"
 year: 1998
 rating: 4.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Project Hail Mary
+name: "Project Hail Mary"
 year: 2026
 rating: 4
 tags: cineworld leicester square,julia,alice,ollie,imax

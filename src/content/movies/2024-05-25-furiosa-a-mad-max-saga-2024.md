@@ -1,5 +1,5 @@
 ---
-name: Furiosa: A Mad Max Saga
+name: "Furiosa: A Mad Max Saga"
 year: 2024
 rating: 4
 tags: julia,odeon west end

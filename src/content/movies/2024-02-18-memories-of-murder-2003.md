@@ -1,5 +1,5 @@
 ---
-name: Memories of Murder
+name: "Memories of Murder"
 year: 2003
 rating: 3.5
 tags: julia

@@ -1,5 +1,5 @@
 ---
-name: BlacKkKlansman
+name: "BlacKkKlansman"
 year: 2018
 rating: 4
 tags: null

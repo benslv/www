@@ -1,5 +1,5 @@
 ---
-name: X-Men: First Class
+name: "X-Men: First Class"
 year: 2011
 rating: 3.5
 tags: plex

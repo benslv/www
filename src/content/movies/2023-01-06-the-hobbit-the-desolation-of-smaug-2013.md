@@ -1,5 +1,5 @@
 ---
-name: The Hobbit: The Desolation of Smaug
+name: "The Hobbit: The Desolation of Smaug"
 year: 2013
 rating: 3
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Pan's Labyrinth
+name: "Pan's Labyrinth"
 year: 2006
 rating: 3.5
 tags: dvd

@@ -1,5 +1,5 @@
 ---
-name: The Addams Family
+name: "The Addams Family"
 year: 1991
 rating: 3
 tags: netflix,julia,amelia

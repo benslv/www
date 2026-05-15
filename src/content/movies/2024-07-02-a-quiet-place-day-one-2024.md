@@ -1,5 +1,5 @@
 ---
-name: A Quiet Place: Day One
+name: "A Quiet Place: Day One"
 year: 2024
 rating: 3.5
 tags: julia,picturehouse central

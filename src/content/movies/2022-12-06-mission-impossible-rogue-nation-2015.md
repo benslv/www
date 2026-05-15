@@ -1,5 +1,5 @@
 ---
-name: Mission: Impossible – Rogue Nation
+name: "Mission: Impossible – Rogue Nation"
 year: 2015
 rating: 4
 tags: null

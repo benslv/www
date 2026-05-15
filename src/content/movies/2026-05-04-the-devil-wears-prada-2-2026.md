@@ -1,5 +1,5 @@
 ---
-name: The Devil Wears Prada 2
+name: "The Devil Wears Prada 2"
 year: 2026
 rating: 3
 tags: vue leicester square,julia,alice,ollie

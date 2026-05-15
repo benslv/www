@@ -1,5 +1,5 @@
 ---
-name: The Black Phone
+name: "The Black Phone"
 year: 2021
 rating: 3
 tags: null

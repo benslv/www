@@ -1,5 +1,5 @@
 ---
-name: The Hunger Games: Catching Fire
+name: "The Hunger Games: Catching Fire"
 year: 2013
 rating: 3.5
 tags: null

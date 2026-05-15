@@ -1,5 +1,5 @@
 ---
-name: Master and Commander: The Far Side of the World
+name: "Master and Commander: The Far Side of the World"
 year: 2003
 rating: 4
 tags: null

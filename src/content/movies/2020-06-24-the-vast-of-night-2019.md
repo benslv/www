@@ -1,5 +1,5 @@
 ---
-name: The Vast of Night
+name: "The Vast of Night"
 year: 2019
 rating: 4.5
 tags: null

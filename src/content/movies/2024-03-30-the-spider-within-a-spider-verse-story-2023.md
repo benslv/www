@@ -1,5 +1,5 @@
 ---
-name: The Spider Within: A Spider-Verse Story
+name: "The Spider Within: A Spider-Verse Story"
 year: 2023
 rating: 0
 tags: youtube

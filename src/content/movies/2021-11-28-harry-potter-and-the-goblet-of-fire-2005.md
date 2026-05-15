@@ -1,5 +1,5 @@
 ---
-name: Harry Potter and the Goblet of Fire
+name: "Harry Potter and the Goblet of Fire"
 year: 2005
 rating: 3.5
 tags: null

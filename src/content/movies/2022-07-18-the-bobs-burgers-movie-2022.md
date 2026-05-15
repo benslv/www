@@ -1,5 +1,5 @@
 ---
-name: The Bob's Burgers Movie
+name: "The Bob's Burgers Movie"
 year: 2022
 rating: 3
 tags: null

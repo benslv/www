@@ -1,5 +1,5 @@
 ---
-name: 10 Things I Hate About You
+name: "10 Things I Hate About You"
 year: 1999
 rating: 3.5
 tags: julia,disney+

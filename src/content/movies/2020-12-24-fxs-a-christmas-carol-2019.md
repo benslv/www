@@ -1,5 +1,5 @@
 ---
-name: FX's A Christmas Carol
+name: "FX's A Christmas Carol"
 year: 2019
 rating: 4
 tags: plex

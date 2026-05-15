@@ -1,5 +1,5 @@
 ---
-name: Dungeons & Dragons: Honor Among Thieves
+name: "Dungeons & Dragons: Honor Among Thieves"
 year: 2023
 rating: 3.5
 tags: null

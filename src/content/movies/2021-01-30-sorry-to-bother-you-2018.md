@@ -1,5 +1,5 @@
 ---
-name: Sorry to Bother You
+name: "Sorry to Bother You"
 year: 2018
 rating: 4
 tags: netflix

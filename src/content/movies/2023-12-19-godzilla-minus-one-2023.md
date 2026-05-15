@@ -1,5 +1,5 @@
 ---
-name: Godzilla Minus One
+name: "Godzilla Minus One"
 year: 2023
 rating: 4.5
 tags: the light redhill

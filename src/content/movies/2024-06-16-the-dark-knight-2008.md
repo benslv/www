@@ -1,5 +1,5 @@
 ---
-name: The Dark Knight
+name: "The Dark Knight"
 year: 2008
 rating: 4.5
 tags: bfi imax

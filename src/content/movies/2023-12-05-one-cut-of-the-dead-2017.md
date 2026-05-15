@@ -1,5 +1,5 @@
 ---
-name: One Cut of the Dead
+name: "One Cut of the Dead"
 year: 2017
 rating: 4
 tags: null

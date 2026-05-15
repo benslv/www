@@ -1,5 +1,5 @@
 ---
-name: Chungking Express
+name: "Chungking Express"
 year: 1994
 rating: 4
 tags: null

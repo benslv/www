@@ -1,5 +1,5 @@
 ---
-name: Interview with the Vampire
+name: "Interview with the Vampire"
 year: 1994
 rating: 3.5
 tags: null

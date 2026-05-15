@@ -1,5 +1,5 @@
 ---
-name: Promising Young Woman
+name: "Promising Young Woman"
 year: 2020
 rating: 3
 tags: null

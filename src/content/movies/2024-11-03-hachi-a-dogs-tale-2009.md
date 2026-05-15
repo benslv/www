@@ -1,5 +1,5 @@
 ---
-name: Hachi: A Dog's Tale
+name: "Hachi: A Dog's Tale"
 year: 2009
 rating: 3
 tags: julia

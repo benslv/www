@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Bête Noire
+name: "Black Mirror: Bête Noire"
 year: 2025
 rating: 2
 tags: julia,netflix

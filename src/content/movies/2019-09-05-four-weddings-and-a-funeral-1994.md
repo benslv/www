@@ -1,5 +1,5 @@
 ---
-name: Four Weddings and a Funeral
+name: "Four Weddings and a Funeral"
 year: 1994
 rating: 3.5
 tags: null

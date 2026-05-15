@@ -1,5 +1,5 @@
 ---
-name: John Wick: Chapter 4
+name: "John Wick: Chapter 4"
 year: 2023
 rating: 4
 tags: everyman reigate

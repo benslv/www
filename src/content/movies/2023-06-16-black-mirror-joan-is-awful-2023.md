@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Joan Is Awful
+name: "Black Mirror: Joan Is Awful"
 year: 2023
 rating: 0
 tags: null

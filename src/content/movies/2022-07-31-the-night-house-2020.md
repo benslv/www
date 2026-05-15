@@ -1,5 +1,5 @@
 ---
-name: The Night House
+name: "The Night House"
 year: 2020
 rating: 3.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Phantom Thread
+name: "Phantom Thread"
 year: 2017
 rating: 4.5
 tags: plex

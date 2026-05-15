@@ -1,5 +1,5 @@
 ---
-name: Definitely, Maybe
+name: "Definitely, Maybe"
 year: 2008
 rating: 2.5
 tags: julia

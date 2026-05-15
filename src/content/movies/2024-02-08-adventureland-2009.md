@@ -1,5 +1,5 @@
 ---
-name: Adventureland
+name: "Adventureland"
 year: 2009
 rating: 2.5
 tags: null

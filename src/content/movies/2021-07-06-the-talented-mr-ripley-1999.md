@@ -1,5 +1,5 @@
 ---
-name: The Talented Mr. Ripley
+name: "The Talented Mr. Ripley"
 year: 1999
 rating: 4.5
 tags: null

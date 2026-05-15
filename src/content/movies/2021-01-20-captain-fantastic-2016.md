@@ -1,5 +1,5 @@
 ---
-name: Captain Fantastic
+name: "Captain Fantastic"
 year: 2016
 rating: 3.5
 tags: null

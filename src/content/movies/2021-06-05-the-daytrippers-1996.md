@@ -1,5 +1,5 @@
 ---
-name: The Daytrippers
+name: "The Daytrippers"
 year: 1996
 rating: 4
 tags: null

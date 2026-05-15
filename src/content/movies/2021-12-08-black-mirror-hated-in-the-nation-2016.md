@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Hated in the Nation
+name: "Black Mirror: Hated in the Nation"
 year: 2016
 rating: 3.5
 tags: null

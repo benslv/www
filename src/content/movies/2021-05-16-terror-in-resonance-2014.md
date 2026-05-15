@@ -1,5 +1,5 @@
 ---
-name: Terror in Resonance
+name: "Terror in Resonance"
 year: 2014
 rating: 3.5
 tags: null

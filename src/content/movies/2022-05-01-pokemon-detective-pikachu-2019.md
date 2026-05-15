@@ -1,5 +1,5 @@
 ---
-name: Pokémon Detective Pikachu
+name: "Pokémon Detective Pikachu"
 year: 2019
 rating: 3
 tags: null

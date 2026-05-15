@@ -1,5 +1,5 @@
 ---
-name: Me and Earl and the Dying Girl
+name: "Me and Earl and the Dying Girl"
 year: 2015
 rating: 3.5
 tags: julia,plex

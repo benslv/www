@@ -1,5 +1,5 @@
 ---
-name: A Monster Calls
+name: "A Monster Calls"
 year: 2016
 rating: 4
 tags: null

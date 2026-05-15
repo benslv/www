@@ -1,5 +1,5 @@
 ---
-name: Attack the Block
+name: "Attack the Block"
 year: 2011
 rating: 3.5
 tags: null

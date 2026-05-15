@@ -1,5 +1,5 @@
 ---
-name: X-Men: Days of Future Past
+name: "X-Men: Days of Future Past"
 year: 2014
 rating: 4
 tags: plex

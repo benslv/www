@@ -1,5 +1,5 @@
 ---
-name: The Sixth Sense
+name: "The Sixth Sense"
 year: 1999
 rating: 4
 tags: null

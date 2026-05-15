@@ -1,5 +1,5 @@
 ---
-name: Army of the Dead
+name: "Army of the Dead"
 year: 2021
 rating: 2.5
 tags: null

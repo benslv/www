@@ -1,5 +1,5 @@
 ---
-name: In the Mood for Love
+name: "In the Mood for Love"
 year: 2000
 rating: 3.5
 tags: picturehouse finsbury

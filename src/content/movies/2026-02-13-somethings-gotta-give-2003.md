@@ -1,5 +1,5 @@
 ---
-name: Something's Gotta Give
+name: "Something's Gotta Give"
 year: 2003
 rating: 3
 tags: julia,plex

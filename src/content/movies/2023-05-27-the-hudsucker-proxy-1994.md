@@ -1,5 +1,5 @@
 ---
-name: The Hudsucker Proxy
+name: "The Hudsucker Proxy"
 year: 1994
 rating: 4
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Terribly Happy
+name: "Terribly Happy"
 year: 2008
 rating: 3
 tags: null

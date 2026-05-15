@@ -1,5 +1,5 @@
 ---
-name: Guardians of the Galaxy Vol. 3
+name: "Guardians of the Galaxy Vol. 3"
 year: 2023
 rating: 3.5
 tags: null

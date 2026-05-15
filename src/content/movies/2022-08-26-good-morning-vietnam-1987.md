@@ -1,5 +1,5 @@
 ---
-name: Good Morning, Vietnam
+name: "Good Morning, Vietnam"
 year: 1987
 rating: 3.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Lost in Translation
+name: "Lost in Translation"
 year: 2003
 rating: 4
 tags: null

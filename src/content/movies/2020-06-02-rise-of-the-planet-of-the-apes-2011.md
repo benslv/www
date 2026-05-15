@@ -1,5 +1,5 @@
 ---
-name: Rise of the Planet of the Apes
+name: "Rise of the Planet of the Apes"
 year: 2011
 rating: 3.5
 tags: null

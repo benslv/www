@@ -1,5 +1,5 @@
 ---
-name: The Frighteners
+name: "The Frighteners"
 year: 1996
 rating: 2.5
 tags: plex,oli,dad

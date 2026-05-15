@@ -1,5 +1,5 @@
 ---
-name: The Bourne Identity
+name: "The Bourne Identity"
 year: 2002
 rating: 3.5
 tags: plex

@@ -1,5 +1,5 @@
 ---
-name: The Place Beyond the Pines
+name: "The Place Beyond the Pines"
 year: 2012
 rating: 3.5
 tags: null

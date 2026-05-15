@@ -1,5 +1,5 @@
 ---
-name: Mission: Impossible – The Final Reckoning
+name: "Mission: Impossible – The Final Reckoning"
 year: 2025
 rating: 3.5
 tags: picturehouse central,tom

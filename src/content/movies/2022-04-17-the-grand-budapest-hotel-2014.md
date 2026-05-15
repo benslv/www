@@ -1,5 +1,5 @@
 ---
-name: The Grand Budapest Hotel
+name: "The Grand Budapest Hotel"
 year: 2014
 rating: 4
 tags: null

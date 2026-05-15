@@ -1,5 +1,5 @@
 ---
-name: Sentimental Value
+name: "Sentimental Value"
 year: 2025
 rating: 4
 tags: null

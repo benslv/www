@@ -1,5 +1,5 @@
 ---
-name: Color Out of Space
+name: "Color Out of Space"
 year: 2019
 rating: 3.5
 tags: null

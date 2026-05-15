@@ -1,5 +1,5 @@
 ---
-name: Where Dreams Go To Die
+name: "Where Dreams Go To Die"
 year: 2017
 rating: 0
 tags: youtube

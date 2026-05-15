@@ -1,5 +1,5 @@
 ---
-name: Ani*Kuri15: Good Morning
+name: "Ani*Kuri15: Good Morning"
 year: 2007
 rating: 0
 tags: null

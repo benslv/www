@@ -1,5 +1,5 @@
 ---
-name: A Complete Unknown
+name: "A Complete Unknown"
 year: 2024
 rating: 2.5
 tags: julia

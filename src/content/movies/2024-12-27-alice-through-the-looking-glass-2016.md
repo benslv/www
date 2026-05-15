@@ -1,5 +1,5 @@
 ---
-name: Alice Through the Looking Glass
+name: "Alice Through the Looking Glass"
 year: 2016
 rating: 2
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Over the Garden Wall
+name: "Over the Garden Wall"
 year: 2014
 rating: 0
 tags: julia

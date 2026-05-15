@@ -1,5 +1,5 @@
 ---
-name: Edge of Tomorrow
+name: "Edge of Tomorrow"
 year: 2014
 rating: 3.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: The Wedding Banquet
+name: "The Wedding Banquet"
 year: 2025
 rating: 2.5
 tags: julia,plex

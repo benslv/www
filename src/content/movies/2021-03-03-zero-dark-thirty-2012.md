@@ -1,5 +1,5 @@
 ---
-name: Zero Dark Thirty
+name: "Zero Dark Thirty"
 year: 2012
 rating: 3.5
 tags: plex

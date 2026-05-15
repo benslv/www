@@ -1,5 +1,5 @@
 ---
-name: The Hunger Games
+name: "The Hunger Games"
 year: 2012
 rating: 3
 tags: null

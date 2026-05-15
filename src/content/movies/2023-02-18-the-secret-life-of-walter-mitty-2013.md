@@ -1,5 +1,5 @@
 ---
-name: The Secret Life of Walter Mitty
+name: "The Secret Life of Walter Mitty"
 year: 2013
 rating: 4
 tags: null

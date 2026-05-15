@@ -1,5 +1,5 @@
 ---
-name: The Queen's Gambit
+name: "The Queen's Gambit"
 year: 2020
 rating: 5
 tags: netflix

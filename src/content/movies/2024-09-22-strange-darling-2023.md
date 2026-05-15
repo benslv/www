@@ -1,5 +1,5 @@
 ---
-name: Strange Darling
+name: "Strange Darling"
 year: 2023
 rating: 3
 tags: julia,🇧🇪 cinema palace

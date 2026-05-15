@@ -1,5 +1,5 @@
 ---
-name: When Harry Met Sally...
+name: "When Harry Met Sally..."
 year: 1989
 rating: 4
 tags: plex,julia,mum,dad

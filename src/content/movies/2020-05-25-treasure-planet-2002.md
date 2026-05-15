@@ -1,5 +1,5 @@
 ---
-name: Treasure Planet
+name: "Treasure Planet"
 year: 2002
 rating: 4
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: El Camino: A Breaking Bad Movie
+name: "El Camino: A Breaking Bad Movie"
 year: 2019
 rating: 3.5
 tags: null

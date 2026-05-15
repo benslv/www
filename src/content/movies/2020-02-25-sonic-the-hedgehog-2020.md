@@ -1,5 +1,5 @@
 ---
-name: Sonic the Hedgehog
+name: "Sonic the Hedgehog"
 year: 2020
 rating: 2.5
 tags: null

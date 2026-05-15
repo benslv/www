@@ -1,5 +1,5 @@
 ---
-name: Hellboy II: The Golden Army
+name: "Hellboy II: The Golden Army"
 year: 2008
 rating: 4
 tags: netflix

@@ -1,5 +1,5 @@
 ---
-name: Kingsman: The Golden Circle
+name: "Kingsman: The Golden Circle"
 year: 2017
 rating: 2.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Star Trek Into Darkness
+name: "Star Trek Into Darkness"
 year: 2013
 rating: 3
 tags: null

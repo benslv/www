@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Eulogy
+name: "Black Mirror: Eulogy"
 year: 2025
 rating: 4
 tags: netflix,julia

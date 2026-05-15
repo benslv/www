@@ -1,5 +1,5 @@
 ---
-name: The Current War
+name: "The Current War"
 year: 2017
 rating: 2.5
 tags: null

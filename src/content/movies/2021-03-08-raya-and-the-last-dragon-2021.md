@@ -1,5 +1,5 @@
 ---
-name: Raya and the Last Dragon
+name: "Raya and the Last Dragon"
 year: 2021
 rating: 3.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Inglourious Basterds
+name: "Inglourious Basterds"
 year: 2009
 rating: 4
 tags: null

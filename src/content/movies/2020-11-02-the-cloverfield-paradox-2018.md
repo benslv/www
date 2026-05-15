@@ -1,5 +1,5 @@
 ---
-name: The Cloverfield Paradox
+name: "The Cloverfield Paradox"
 year: 2018
 rating: 2
 tags: netflix

@@ -1,5 +1,5 @@
 ---
-name: Batman v Superman: Dawn of Justice
+name: "Batman v Superman: Dawn of Justice"
 year: 2016
 rating: 2.5
 tags: null

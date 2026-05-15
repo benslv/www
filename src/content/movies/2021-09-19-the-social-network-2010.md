@@ -1,5 +1,5 @@
 ---
-name: The Social Network
+name: "The Social Network"
 year: 2010
 rating: 5
 tags: null

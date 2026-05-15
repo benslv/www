@@ -1,5 +1,5 @@
 ---
-name: Lars and the Real Girl
+name: "Lars and the Real Girl"
 year: 2007
 rating: 4
 tags: null

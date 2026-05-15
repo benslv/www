@@ -1,5 +1,5 @@
 ---
-name: Twelve Monkeys
+name: "Twelve Monkeys"
 year: 1995
 rating: 3.5
 tags: plex

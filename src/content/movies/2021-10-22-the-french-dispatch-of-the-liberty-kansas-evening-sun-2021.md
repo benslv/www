@@ -1,5 +1,5 @@
 ---
-name: The French Dispatch of the Liberty, Kansas Evening Sun
+name: "The French Dispatch of the Liberty, Kansas Evening Sun"
 year: 2021
 rating: 4.5
 tags: picturehouse york

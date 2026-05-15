@@ -1,5 +1,5 @@
 ---
-name: The Devil Wears Prada
+name: "The Devil Wears Prada"
 year: 2006
 rating: 4
 tags: null

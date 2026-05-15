@@ -1,5 +1,5 @@
 ---
-name: Moonrise Kingdom
+name: "Moonrise Kingdom"
 year: 2012
 rating: 4
 tags: null

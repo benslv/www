@@ -1,5 +1,5 @@
 ---
-name: Pirates of the Caribbean: The Curse of the Black Pearl
+name: "Pirates of the Caribbean: The Curse of the Black Pearl"
 year: 2003
 rating: 3.5
 tags: null

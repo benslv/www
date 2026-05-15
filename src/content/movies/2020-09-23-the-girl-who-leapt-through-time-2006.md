@@ -1,5 +1,5 @@
 ---
-name: The Girl Who Leapt Through Time
+name: "The Girl Who Leapt Through Time"
 year: 2006
 rating: 3.5
 tags: plex

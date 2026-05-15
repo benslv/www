@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Loch Henry
+name: "Black Mirror: Loch Henry"
 year: 2023
 rating: 0
 tags: null

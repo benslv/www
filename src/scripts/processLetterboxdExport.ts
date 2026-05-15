@@ -53,13 +53,13 @@ function slugify(title: string) {
 
 function generateFrontmatter(obj: DiaryEntry | ReviewEntry) {
 	return `---
-name: ${obj.Name}
+name: "${obj.Name}"
 year: ${obj.Year}
 rating: ${obj.Rating}
-tags: ${obj.Tags.length > 0 ? obj.Tags : null}
+tags: ${obj.Tags && obj.Tags.length > 0 ? obj.Tags : null}
 uri: ${obj["Letterboxd URI"]}
 rewatch: ${obj.Rewatch}
-dateWatched: ${obj["Watched Date"]}
+dateWatched: ${obj["Watched Date"] || null}
 dateLogged: ${obj.Date}
 ---`;
 }
@@ -73,8 +73,9 @@ export const diarySchema = z.object({
 	Rewatch: z.string().transform((val) => val === "Yes"),
 	Tags: z
 		.string()
-		.transform((val) => (val.length > 0 ? val.split(", ") : [])),
-	"Watched Date": z.string(),
+		.transform((val) => (val.length > 0 ? val.split(", ") : []))
+		.nullable(),
+	"Watched Date": z.string().optional(),
 });
 
 const reviewSchema = diarySchema.extend({
@@ -84,62 +85,67 @@ const reviewSchema = diarySchema.extend({
 type DiaryEntry = z.infer<typeof diarySchema>;
 type ReviewEntry = z.infer<typeof reviewSchema>;
 
-const diary = readFileSync(diaryFilePath, "utf-8");
-const reviews = readFileSync(reviewsFilePath, "utf-8");
+// We ideally won't always have these files, but we don't want the code to error if they don't exist.
+if (!existsSync(diaryFilePath) || !existsSync(reviewsFilePath)) {
+	console.log("One of diary or reviews CSV doesn't exist.");
+} else {
+	const diary = readFileSync(diaryFilePath, "utf-8");
+	const reviews = readFileSync(reviewsFilePath, "utf-8");
 
-const parsedDiary = parse(diary, { columns: true }).map((i) =>
-	z.parse(diarySchema, i),
-);
+	const parsedDiary = parse(diary, { columns: true }).map((i) =>
+		z.parse(diarySchema, i),
+	);
 
-const parsedReviews = parse(reviews, { columns: true }).map((i) =>
-	z.parse(reviewSchema, i),
-);
+	const parsedReviews = parse(reviews, { columns: true }).map((i) =>
+		z.parse(reviewSchema, i),
+	);
 
-if (!existsSync(outputFilePath)) mkdirSync(outputFilePath);
+	if (!existsSync(outputFilePath)) mkdirSync(outputFilePath);
 
-const slugs = new Set<string>();
+	const slugs = new Set<string>();
 
-// Generate diary entries first
-for (const entry of parsedDiary) {
-	const date = entry["Watched Date"] || entry.Date;
+	// Generate diary entries first
+	for (const entry of parsedDiary) {
+		const date = entry["Watched Date"] || entry.Date;
 
-	const slug = slugify(`${date}_${entry.Name}_${entry.Year}`);
+		const slug = slugify(`${date}_${entry.Name}_${entry.Year}`);
 
-	if (slugs.has(slug)) {
-		throw new Error(`Generated a slug we've already seen: ${slug}`);
+		if (slugs.has(slug)) {
+			throw new Error(`Generated a slug we've already seen: ${slug}`);
+		}
+
+		slugs.add(slug);
+
+		const fileName = `${slug}.md`;
+
+		const frontmatter = generateFrontmatter(entry);
+
+		const filepath = path.join(outputFilePath, fileName);
+		writeFileSync(filepath, frontmatter);
 	}
 
-	slugs.add(slug);
+	for (const review of parsedReviews) {
+		const date = review["Watched Date"] || review.Date;
 
-	const fileName = `${slug}.md`;
+		const slug = slugify(`${date}_${review.Name}_${review.Year}`);
 
-	const frontmatter = generateFrontmatter(entry);
+		const fileName = `${slug}.md`;
 
-	const filepath = path.join(outputFilePath, fileName);
-	writeFileSync(filepath, frontmatter);
-}
+		const filepath = path.join(outputFilePath, fileName);
 
-for (const review of parsedReviews) {
-	const date = review["Watched Date"] || review.Date;
+		if (slugs.has(slug)) {
+			// Append just the review if we already have a diary entry.
+			appendFileSync(filepath, `\n${review.Review}`);
+		} else {
+			console.log(`Found review without diary entry: ${slug}`);
+			const frontmatter = generateFrontmatter(review);
 
-	const slug = slugify(`${date}_${review.Name}_${review.Year}`);
-
-	const fileName = `${slug}.md`;
-
-	const filepath = path.join(outputFilePath, fileName);
-
-	if (slugs.has(slug)) {
-		// Append just the review if we already have a diary entry.
-		appendFileSync(filepath, `\n${review.Review}`);
-	} else {
-		console.log(`Found review without diary entry: ${slug}`);
-		const frontmatter = generateFrontmatter(review);
-
-		const content = `${frontmatter}
+			const content = `${frontmatter}
 		
 ${review.Review}`;
 
-		// Add the frontmatter and review if this entry isn't already present.
-		writeFileSync(filepath, content);
+			// Add the frontmatter and review if this entry isn't already present.
+			writeFileSync(filepath, content);
+		}
 	}
 }

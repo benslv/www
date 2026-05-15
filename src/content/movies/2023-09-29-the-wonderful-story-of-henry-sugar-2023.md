@@ -1,5 +1,5 @@
 ---
-name: The Wonderful Story of Henry Sugar
+name: "The Wonderful Story of Henry Sugar"
 year: 2023
 rating: 4
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Cyberpunk: Edgerunners
+name: "Cyberpunk: Edgerunners"
 year: 2022
 rating: 3.5
 tags: null

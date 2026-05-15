@@ -1,5 +1,5 @@
 ---
-name: Kingdom of the Planet of the Apes
+name: "Kingdom of the Planet of the Apes"
 year: 2024
 rating: 2.5
 tags: the light redhill

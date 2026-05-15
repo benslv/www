@@ -1,5 +1,5 @@
 ---
-name: The Greatest Showman
+name: "The Greatest Showman"
 year: 2017
 rating: 3.5
 tags: plex

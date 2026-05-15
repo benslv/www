@@ -1,5 +1,5 @@
 ---
-name: Sinbad: Legend of the Seven Seas
+name: "Sinbad: Legend of the Seven Seas"
 year: 2003
 rating: 4
 tags: null

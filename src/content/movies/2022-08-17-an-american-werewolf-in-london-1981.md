@@ -1,5 +1,5 @@
 ---
-name: An American Werewolf in London
+name: "An American Werewolf in London"
 year: 1981
 rating: 3.5
 tags: null

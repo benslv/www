@@ -1,5 +1,5 @@
 ---
-name: The Falcon and the Winter Soldier
+name: "The Falcon and the Winter Soldier"
 year: 2021
 rating: 0
 tags: null

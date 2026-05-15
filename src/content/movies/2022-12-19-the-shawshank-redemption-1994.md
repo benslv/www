@@ -1,5 +1,5 @@
 ---
-name: The Shawshank Redemption
+name: "The Shawshank Redemption"
 year: 1994
 rating: 4.5
 tags: null

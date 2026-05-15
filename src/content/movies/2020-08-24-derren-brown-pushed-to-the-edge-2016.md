@@ -1,5 +1,5 @@
 ---
-name: Derren Brown: Pushed to the Edge
+name: "Derren Brown: Pushed to the Edge"
 year: 2016
 rating: 3.5
 tags: netflix

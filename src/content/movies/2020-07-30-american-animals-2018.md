@@ -1,5 +1,5 @@
 ---
-name: American Animals
+name: "American Animals"
 year: 2018
 rating: 4
 tags: null

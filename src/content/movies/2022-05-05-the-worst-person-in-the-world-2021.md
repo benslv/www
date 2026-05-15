@@ -1,5 +1,5 @@
 ---
-name: The Worst Person in the World
+name: "The Worst Person in the World"
 year: 2021
 rating: 4
 tags: null

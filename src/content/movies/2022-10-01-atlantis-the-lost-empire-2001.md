@@ -1,5 +1,5 @@
 ---
-name: Atlantis: The Lost Empire
+name: "Atlantis: The Lost Empire"
 year: 2001
 rating: 2.5
 tags: null

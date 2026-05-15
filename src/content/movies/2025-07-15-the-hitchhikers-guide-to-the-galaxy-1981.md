@@ -1,5 +1,5 @@
 ---
-name: The Hitchhiker's Guide to the Galaxy
+name: "The Hitchhiker's Guide to the Galaxy"
 year: 1981
 rating: 4
 tags: plex

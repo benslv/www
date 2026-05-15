@@ -1,5 +1,5 @@
 ---
-name: Spider-Man: Homecoming
+name: "Spider-Man: Homecoming"
 year: 2017
 rating: 3.5
 tags: null

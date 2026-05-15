@@ -1,5 +1,5 @@
 ---
-name: The Maze Runner
+name: "The Maze Runner"
 year: 2014
 rating: 3.5
 tags: null

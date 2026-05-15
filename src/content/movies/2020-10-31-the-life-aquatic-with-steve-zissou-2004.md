@@ -1,5 +1,5 @@
 ---
-name: The Life Aquatic with Steve Zissou
+name: "The Life Aquatic with Steve Zissou"
 year: 2004
 rating: 3.5
 tags: plex

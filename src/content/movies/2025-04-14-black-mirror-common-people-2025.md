@@ -1,5 +1,5 @@
 ---
-name: Black Mirror: Common People
+name: "Black Mirror: Common People"
 year: 2025
 rating: 4
 tags: julia,netflix

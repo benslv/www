@@ -1,5 +1,5 @@
 ---
-name: The Great Gatsby
+name: "The Great Gatsby"
 year: 2013
 rating: 2
 tags: null

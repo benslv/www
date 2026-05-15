@@ -1,5 +1,5 @@
 ---
-name: My Neighbor Totoro
+name: "My Neighbor Totoro"
 year: 1988
 rating: 4
 tags: julia,bfi southbank

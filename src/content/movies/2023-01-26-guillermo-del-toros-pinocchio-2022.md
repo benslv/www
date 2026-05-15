@@ -1,5 +1,5 @@
 ---
-name: Guillermo del Toro's Pinocchio
+name: "Guillermo del Toro's Pinocchio"
 year: 2022
 rating: 3
 tags: null

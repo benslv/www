@@ -1,5 +1,5 @@
 ---
-name: The Suicide Squad
+name: "The Suicide Squad"
 year: 2021
 rating: 4
 tags: null

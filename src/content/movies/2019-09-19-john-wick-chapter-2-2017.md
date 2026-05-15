@@ -1,5 +1,5 @@
 ---
-name: John Wick: Chapter 2
+name: "John Wick: Chapter 2"
 year: 2017
 rating: 4
 tags: null

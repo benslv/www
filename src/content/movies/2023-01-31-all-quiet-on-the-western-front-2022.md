@@ -1,5 +1,5 @@
 ---
-name: All Quiet on the Western Front
+name: "All Quiet on the Western Front"
 year: 2022
 rating: 3.5
 tags: null

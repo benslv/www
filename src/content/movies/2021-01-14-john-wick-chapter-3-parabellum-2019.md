@@ -1,5 +1,5 @@
 ---
-name: John Wick: Chapter 3 – Parabellum
+name: "John Wick: Chapter 3 – Parabellum"
 year: 2019
 rating: 3
 tags: netflix

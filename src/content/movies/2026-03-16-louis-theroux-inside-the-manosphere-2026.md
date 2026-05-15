@@ -1,5 +1,5 @@
 ---
-name: Louis Theroux: Inside the Manosphere
+name: "Louis Theroux: Inside the Manosphere"
 year: 2026
 rating: 3
 tags: dad,netflix

@@ -1,5 +1,5 @@
 ---
-name: Last Night in Soho
+name: "Last Night in Soho"
 year: 2021
 rating: 3
 tags: picturehouse york

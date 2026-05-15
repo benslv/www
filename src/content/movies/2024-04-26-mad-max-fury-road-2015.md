@@ -1,5 +1,5 @@
 ---
-name: Mad Max: Fury Road
+name: "Mad Max: Fury Road"
 year: 2015
 rating: 4.5
 tags: julia,bfi imax

@@ -1,5 +1,5 @@
 ---
-name: Everything Everywhere All at Once
+name: "Everything Everywhere All at Once"
 year: 2022
 rating: 5
 tags: picturehouse york

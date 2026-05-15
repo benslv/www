@@ -1,5 +1,5 @@
 ---
-name: Bridget Jones's Diary
+name: "Bridget Jones's Diary"
 year: 2001
 rating: 3
 tags: netflix

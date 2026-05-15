@@ -1,5 +1,5 @@
 ---
-name: Maze Runner: The Scorch Trials
+name: "Maze Runner: The Scorch Trials"
 year: 2015
 rating: 3
 tags: null

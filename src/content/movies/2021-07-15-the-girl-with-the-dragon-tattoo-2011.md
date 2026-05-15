@@ -1,5 +1,5 @@
 ---
-name: The Girl with the Dragon Tattoo
+name: "The Girl with the Dragon Tattoo"
 year: 2011
 rating: 4.5
 tags: null

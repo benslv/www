@@ -1,5 +1,5 @@
 ---
-name: Wallace & Gromit: Vengeance Most Fowl
+name: "Wallace & Gromit: Vengeance Most Fowl"
 year: 2024
 rating: 4
 tags: dad,mum,oli

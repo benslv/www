@@ -1,5 +1,5 @@
 ---
-name: Alien: Covenant
+name: "Alien: Covenant"
 year: 2017
 rating: 4
 tags: null

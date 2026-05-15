@@ -1,5 +1,5 @@
 ---
-name: Official Competition
+name: "Official Competition"
 year: 2021
 rating: 3
 tags: dad,plex

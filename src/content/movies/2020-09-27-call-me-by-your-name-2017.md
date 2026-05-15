@@ -1,5 +1,5 @@
 ---
-name: Call Me by Your Name
+name: "Call Me by Your Name"
 year: 2017
 rating: 4
 tags: plex

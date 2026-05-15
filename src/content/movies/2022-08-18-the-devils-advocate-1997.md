@@ -1,5 +1,5 @@
 ---
-name: The Devil's Advocate
+name: "The Devil's Advocate"
 year: 1997
 rating: 4
 tags: null

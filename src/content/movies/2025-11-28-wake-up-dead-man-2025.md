@@ -1,5 +1,5 @@
 ---
-name: Wake Up Dead Man
+name: "Wake Up Dead Man"
 year: 2025
 rating: 3.5
 tags: julia,tom,picturehouse central

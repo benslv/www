@@ -1,5 +1,5 @@
 ---
-name: You Were Never Really Here
+name: "You Were Never Really Here"
 year: 2017
 rating: 3
 tags: null

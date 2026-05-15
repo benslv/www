@@ -1,5 +1,5 @@
 ---
-name: A Different Man
+name: "A Different Man"
 year: 2024
 rating: 4
 tags: curzon camden

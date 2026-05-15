@@ -1,5 +1,5 @@
 ---
-name: Nocturnal Animals
+name: "Nocturnal Animals"
 year: 2016
 rating: 3.5
 tags: plex

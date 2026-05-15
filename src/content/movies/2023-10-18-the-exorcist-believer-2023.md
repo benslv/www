@@ -1,5 +1,5 @@
 ---
-name: The Exorcist: Believer
+name: "The Exorcist: Believer"
 year: 2023
 rating: 1
 tags: vue westfield,julia

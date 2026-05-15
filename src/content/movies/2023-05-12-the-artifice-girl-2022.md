@@ -1,5 +1,5 @@
 ---
-name: The Artifice Girl
+name: "The Artifice Girl"
 year: 2022
 rating: 3
 tags: null

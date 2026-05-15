@@ -1,7 +1,6 @@
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
-import { diarySchema } from "./scripts/processLetterboxdExport";
 
 export const collections = {
 	posts: defineCollection({
@@ -22,6 +21,15 @@ export const collections = {
 	}),
 	movies: defineCollection({
 		loader: glob({ pattern: "**/*.md", base: "./src/content/movies" }),
-		schema: diarySchema,
+		schema: z.object({
+			name: z.string(),
+			year: z.number(),
+			rating: z.number(),
+			tags: z.string().nullable(),
+			uri: z.string(),
+			rewatch: z.boolean(),
+			dateWatched: z.date().nullable(),
+			dateLogged: z.date(),
+		}),
 	}),
 };

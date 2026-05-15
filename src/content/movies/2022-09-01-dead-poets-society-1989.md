@@ -1,5 +1,5 @@
 ---
-name: Dead Poets Society
+name: "Dead Poets Society"
 year: 1989
 rating: 4
 tags: null

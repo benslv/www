@@ -1,5 +1,5 @@
 ---
-name: Bridget Jones: Mad About the Boy
+name: "Bridget Jones: Mad About the Boy"
 year: 2025
 rating: 3
 tags: julia,picturehouse crouch end

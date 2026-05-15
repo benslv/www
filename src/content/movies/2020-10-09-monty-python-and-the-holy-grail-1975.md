@@ -1,5 +1,5 @@
 ---
-name: Monty Python and the Holy Grail
+name: "Monty Python and the Holy Grail"
 year: 1975
 rating: 3.5
 tags: dvd

@@ -1,5 +1,5 @@
 ---
-name: Top Gun: Maverick
+name: "Top Gun: Maverick"
 year: 2022
 rating: 4.5
 tags: vue york

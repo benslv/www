@@ -1,5 +1,5 @@
 ---
-name: Army of Thieves
+name: "Army of Thieves"
 year: 2021
 rating: 2.5
 tags: netflix

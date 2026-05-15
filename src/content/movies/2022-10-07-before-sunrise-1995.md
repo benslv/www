@@ -1,5 +1,5 @@
 ---
-name: Before Sunrise
+name: "Before Sunrise"
 year: 1995
 rating: 4
 tags: null

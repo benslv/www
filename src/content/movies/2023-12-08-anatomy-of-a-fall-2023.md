@@ -1,5 +1,5 @@
 ---
-name: Anatomy of a Fall
+name: "Anatomy of a Fall"
 year: 2023
 rating: 3.5
 tags: picturehouse fulham,julia

@@ -1,5 +1,5 @@
 ---
-name: Spider-Man: Across the Spider-Verse
+name: "Spider-Man: Across the Spider-Verse"
 year: 2023
 rating: 5
 tags: vue exeter

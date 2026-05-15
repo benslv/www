@@ -1,5 +1,5 @@
 ---
-name: Eternal Sunshine of the Spotless Mind
+name: "Eternal Sunshine of the Spotless Mind"
 year: 2004
 rating: 4.5
 tags: null

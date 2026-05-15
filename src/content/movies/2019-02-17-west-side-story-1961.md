@@ -1,5 +1,5 @@
 ---
-name: West Side Story
+name: "West Side Story"
 year: 1961
 rating: 1
 tags: null

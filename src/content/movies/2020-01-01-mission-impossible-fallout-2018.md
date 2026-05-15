@@ -1,5 +1,5 @@
 ---
-name: Mission: Impossible – Fallout
+name: "Mission: Impossible – Fallout"
 year: 2018
 rating: 4
 tags: null

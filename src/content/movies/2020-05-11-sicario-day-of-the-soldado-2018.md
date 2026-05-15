@@ -1,5 +1,5 @@
 ---
-name: Sicario: Day of the Soldado
+name: "Sicario: Day of the Soldado"
 year: 2018
 rating: 3
 tags: null

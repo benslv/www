@@ -1,5 +1,5 @@
 ---
-name: Neon Genesis Evangelion
+name: "Neon Genesis Evangelion"
 year: 1995
 rating: 3.5
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: The Silence of the Lambs
+name: "The Silence of the Lambs"
 year: 1991
 rating: 4
 tags: null

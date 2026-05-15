@@ -1,5 +1,5 @@
 ---
-name: How to Blow Up a Pipeline
+name: "How to Blow Up a Pipeline"
 year: 2022
 rating: 3.5
 tags: null

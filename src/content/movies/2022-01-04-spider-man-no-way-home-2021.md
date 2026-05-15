@@ -1,5 +1,5 @@
 ---
-name: Spider-Man: No Way Home
+name: "Spider-Man: No Way Home"
 year: 2021
 rating: 4
 tags: null

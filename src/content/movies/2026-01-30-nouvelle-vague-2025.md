@@ -1,5 +1,5 @@
 ---
-name: Nouvelle Vague
+name: "Nouvelle Vague"
 year: 2025
 rating: 3.5
 tags: julia,luke,simon,curzon camden

@@ -1,5 +1,5 @@
 ---
-name: Children of Men
+name: "Children of Men"
 year: 2006
 rating: 4.5
 tags: null

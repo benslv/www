@@ -1,5 +1,5 @@
 ---
-name: Marie Antoinette
+name: "Marie Antoinette"
 year: 2006
 rating: 3
 tags: null

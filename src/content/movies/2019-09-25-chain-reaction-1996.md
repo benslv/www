@@ -1,5 +1,5 @@
 ---
-name: Chain Reaction
+name: "Chain Reaction"
 year: 1996
 rating: 2
 tags: null

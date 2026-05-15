@@ -1,5 +1,5 @@
 ---
-name: KPop Demon Hunters
+name: "KPop Demon Hunters"
 year: 2025
 rating: 3.5
 tags: julia,netflix

@@ -1,5 +1,5 @@
 ---
-name: Star Wars: The Rise of Skywalker
+name: "Star Wars: The Rise of Skywalker"
 year: 2019
 rating: 3
 tags: null

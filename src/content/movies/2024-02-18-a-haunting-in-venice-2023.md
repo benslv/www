@@ -1,5 +1,5 @@
 ---
-name: A Haunting in Venice
+name: "A Haunting in Venice"
 year: 2023
 rating: 2.5
 tags: null

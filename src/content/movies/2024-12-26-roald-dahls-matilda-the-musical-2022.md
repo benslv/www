@@ -1,5 +1,5 @@
 ---
-name: Roald Dahl's Matilda the Musical
+name: "Roald Dahl's Matilda the Musical"
 year: 2022
 rating: 3.5
 tags: mum,dad

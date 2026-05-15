@@ -1,5 +1,5 @@
 ---
-name: X-Men: Apocalypse
+name: "X-Men: Apocalypse"
 year: 2016
 rating: 2
 tags: plex

@@ -1,5 +1,5 @@
 ---
-name: My Dearest Fu Bao
+name: "My Dearest Fu Bao"
 year: 2024
 rating: 3.5
 tags: julia

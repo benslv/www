@@ -1,5 +1,5 @@
 ---
-name: Guardians of the Galaxy
+name: "Guardians of the Galaxy"
 year: 2014
 rating: 3.5
 tags: null

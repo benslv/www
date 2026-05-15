@@ -1,5 +1,5 @@
 ---
-name: Little Miss Sunshine
+name: "Little Miss Sunshine"
 year: 2006
 rating: 3.5
 tags: null

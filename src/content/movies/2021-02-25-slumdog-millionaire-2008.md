@@ -1,5 +1,5 @@
 ---
-name: Slumdog Millionaire
+name: "Slumdog Millionaire"
 year: 2008
 rating: 4
 tags: null

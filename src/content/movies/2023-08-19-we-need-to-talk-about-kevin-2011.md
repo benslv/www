@@ -1,5 +1,5 @@
 ---
-name: We Need to Talk About Kevin
+name: "We Need to Talk About Kevin"
 year: 2011
 rating: 3
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Crazy Rich Asians
+name: "Crazy Rich Asians"
 year: 2018
 rating: 3.5
 tags: cinehub

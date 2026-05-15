@@ -1,5 +1,5 @@
 ---
-name: Searching for Sugar Man
+name: "Searching for Sugar Man"
 year: 2012
 rating: 3.5
 tags: null

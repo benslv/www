@@ -1,5 +1,5 @@
 ---
-name: Kiki's Delivery Service
+name: "Kiki's Delivery Service"
 year: 1989
 rating: 4.5
 tags: null

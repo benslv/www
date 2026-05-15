@@ -1,5 +1,5 @@
 ---
-name: Michael Clayton
+name: "Michael Clayton"
 year: 2007
 rating: 3
 tags: null

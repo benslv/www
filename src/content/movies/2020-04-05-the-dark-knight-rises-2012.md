@@ -1,5 +1,5 @@
 ---
-name: The Dark Knight Rises
+name: "The Dark Knight Rises"
 year: 2012
 rating: 4
 tags: null

@@ -1,5 +1,5 @@
 ---
-name: Murder Mystery
+name: "Murder Mystery"
 year: 2019
 rating: 2
 tags: null
