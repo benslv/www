@@ -1,3 +1,37 @@
 ---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
 
+const movies = await getCollection("movies").then((data) =>
+	data.toSorted(
+		(a, b) => b.data.dateLogged.getTime() - a.data.dateLogged.getTime(),
+	),
+);
+
+console.log(movies);
 ---
+
+<Layout>
+	<h1>Movies</h1>
+	<div id="movieList">
+		{
+			movies.map(({ id, data }) => (
+				<a href={`/movies/${id}`}>{data.name}</a>
+			))
+		}
+	</div>
+</Layout>
+
+<style>
+	#movieList {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+		& > div {
+			aspect-ratio: auto calc(2 / 3);
+			border: 1px solid red;
+			border-radius: 4px;
+		}
+	}
+</style>
