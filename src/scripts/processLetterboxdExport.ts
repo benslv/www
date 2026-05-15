@@ -1,15 +1,22 @@
 import { z } from "astro/zod";
 import { parse } from "csv-parse/sync";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import {
+	appendFileSync,
+	existsSync,
+	mkdirSync,
+	readFileSync,
+	writeFileSync,
+} from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const diaryFilePath = path.join(__dirname, "diary.csv");
+const reviewsFilePath = path.join(__dirname, "reviews.csv");
 const outputFilePath = path.join(__dirname, "../content/movies");
 
-function sanitiseTitle(title: string) {
+function slugify(title: string) {
 	return (
 		title
 			// Strip double-quotes (CSV artifact)
@@ -44,7 +51,20 @@ function sanitiseTitle(title: string) {
 	);
 }
 
-export const letterboxdEntry = z.object({
+function generateFrontmatter(obj: DiaryEntry | ReviewEntry) {
+	return `---
+name: ${obj.Name}
+year: ${obj.Year}
+rating: ${obj.Rating}
+tags: ${obj.Tags.length > 0 ? obj.Tags : null}
+uri: ${obj["Letterboxd URI"]}
+rewatch: ${obj.Rewatch}
+dateWatched: ${obj["Watched Date"]}
+dateLogged: ${obj.Date}
+---`;
+}
+
+export const diarySchema = z.object({
 	Date: z.string(),
 	Name: z.string(),
 	Year: z.coerce.number(),
@@ -57,29 +77,69 @@ export const letterboxdEntry = z.object({
 	"Watched Date": z.string(),
 });
 
-const a = readFileSync(diaryFilePath, "utf-8");
+const reviewSchema = diarySchema.extend({
+	Review: z.string(),
+});
 
-const records = parse(a, { columns: true }).map((i) =>
-	z.parse(letterboxdEntry, i),
+type DiaryEntry = z.infer<typeof diarySchema>;
+type ReviewEntry = z.infer<typeof reviewSchema>;
+
+const diary = readFileSync(diaryFilePath, "utf-8");
+const reviews = readFileSync(reviewsFilePath, "utf-8");
+
+const parsedDiary = parse(diary, { columns: true }).map((i) =>
+	z.parse(diarySchema, i),
+);
+
+const parsedReviews = parse(reviews, { columns: true }).map((i) =>
+	z.parse(reviewSchema, i),
 );
 
 if (!existsSync(outputFilePath)) mkdirSync(outputFilePath);
 
-for (const entry of records) {
-	const sanitisedName = sanitiseTitle(entry.Name);
-	const fileName = `${entry["Watched Date"]}_${sanitisedName}_${entry.Year}`;
+const slugs = new Set<string>();
 
-	const contents = `---
-name: ${entry.Name}
-year: ${entry.Year} 
-rating: ${entry.Rating}
-tags: ${entry.Tags.length > 0 ? entry.Tags : null}
-uri: ${entry["Letterboxd URI"]}
-rewatch: ${entry.Rewatch}
-dateWatched: ${entry["Watched Date"]}
-dateLogged: ${entry.Date}
----`;
+// Generate diary entries first
+for (const entry of parsedDiary) {
+	const date = entry["Watched Date"] || entry.Date;
 
-	const filepath = path.join(outputFilePath, `${fileName}.md`);
-	writeFileSync(filepath, contents);
+	const slug = slugify(`${date}_${entry.Name}_${entry.Year}`);
+
+	if (slugs.has(slug)) {
+		throw new Error(`Generated a slug we've already seen: ${slug}`);
+	}
+
+	slugs.add(slug);
+
+	const fileName = `${slug}.md`;
+
+	const frontmatter = generateFrontmatter(entry);
+
+	const filepath = path.join(outputFilePath, fileName);
+	writeFileSync(filepath, frontmatter);
+}
+
+for (const review of parsedReviews) {
+	const date = review["Watched Date"] || review.Date;
+
+	const slug = slugify(`${date}_${review.Name}_${review.Year}`);
+
+	const fileName = `${slug}.md`;
+
+	const filepath = path.join(outputFilePath, fileName);
+
+	if (slugs.has(slug)) {
+		// Append just the review if we already have a diary entry.
+		appendFileSync(filepath, `\n${review.Review}`);
+	} else {
+		console.log(`Found review without diary entry: ${slug}`);
+		const frontmatter = generateFrontmatter(review);
+
+		const content = `${frontmatter}
+		
+${review.Review}`;
+
+		// Add the frontmatter and review if this entry isn't already present.
+		writeFileSync(filepath, content);
+	}
 }

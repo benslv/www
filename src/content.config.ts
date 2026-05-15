@@ -1,7 +1,7 @@
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
-import { letterboxdEntry } from "./scripts/processLetterboxdExport";
+import { diarySchema } from "./scripts/processLetterboxdExport";
 
 export const collections = {
 	posts: defineCollection({
@@ -22,6 +22,6 @@ export const collections = {
 	}),
 	movies: defineCollection({
 		loader: glob({ pattern: "**/*.md", base: "./src/content/movies" }),
-		schema: letterboxdEntry,
+		schema: diarySchema,
 	}),
 };
