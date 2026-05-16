@@ -1,0 +1,141 @@
+import { z } from "astro/zod";
+import { parse } from "csv-parse/sync";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import path from "path";
+import {
+	diarySchema,
+	ratingSchema,
+	reviewSchema,
+	watchedSchema,
+	type DiarySchema,
+	type RatingSchema,
+	type ReviewSchema,
+	type WatchedSchema,
+} from "./letterboxdSchemas";
+
+function slugify(title: string) {
+	return (
+		title
+			// Strip double-quotes (CSV artifact)
+			.replace(/"/g, "")
+			// Strip apostrophes/single-quotes
+			.replace(/'/g, "")
+			// & → and
+			.replace(/\s*&\s*/g, " and ")
+			// × → x
+			.replace(/×/g, "x")
+			// Interpunct → hyphen
+			.replace(/·/g, "-")
+			// Slash → hyphen
+			.replace(/\//g, "-")
+			// Colon, en/em dash, asterisk, exclamation mark, comma → space
+			.replace(/[:\u2013\u2014*!,]/g, " ")
+			// Strip trailing period
+			.replace(/\.(\s*)$/, "$1")
+			// Normalise diacritics/macrons → ASCII
+			.normalize("NFD")
+			.replace(/[\u0300-\u036f]/g, "")
+			// Lowercase
+			.toLowerCase()
+			// Catch-all: remaining non-alphanumeric non-hyphen non-space → space
+			.replace(/[^a-z0-9\- ]/g, " ")
+			// Spaces → hyphens
+			.replace(/\s+/g, "-")
+			// Collapse multiple hyphens
+			.replace(/-+/g, "-")
+			// Strip leading/trailing hyphens
+			.replace(/^-+|-+$/g, "")
+	);
+}
+
+function importFile<
+	T extends WatchedSchema | RatingSchema | DiarySchema | ReviewSchema,
+>(fileName: string, schema: z.ZodType<T>): Record<string, T> {
+	const csvFilePath = path.join(import.meta.dirname, fileName);
+
+	if (!existsSync(csvFilePath)) {
+		console.log(`No file found at path: ${csvFilePath}`);
+
+		return {};
+	}
+
+	const csvData = readFileSync(csvFilePath, "utf-8");
+
+	const parsedData = parse(csvData, { columns: true }).reduce<
+		Record<string, T>
+	>((acc, row) => {
+		const parsedRow = schema.parse(row);
+
+		// const uri = parsedRow["Letterboxd URI"].replace("https://boxd.it/", "");
+
+		const id = slugify(
+			`${parsedRow.Date}-${parsedRow.Name}-${parsedRow.Year}`,
+		);
+
+		if (id in acc) {
+			throw new Error(`${id} ID already exists...`);
+			// console.log(`Skipping ${id}... already in entries.`);
+			// return acc;
+		}
+
+		acc[id] = parsedRow;
+
+		return acc;
+	}, {});
+
+	return parsedData;
+}
+
+const reviewEntries = importFile("reviews.csv", reviewSchema);
+const diaryEntries = importFile("diary.csv", diarySchema);
+const ratingEntries = importFile("ratings.csv", ratingSchema);
+const watchedEntries = importFile("watched.csv", watchedSchema);
+
+// We can only guarantee that properties from WatchedSchema will exist but we
+// need to support all the possible properties up to the size of ReviewSchema
+type AnyEntry = WatchedSchema & Partial<ReviewSchema>;
+
+const allEntries: Record<string, AnyEntry> = structuredClone(reviewEntries);
+
+/**
+ * Iterate over diary, rating, and watched to fill in any gaps.
+ *
+ * The order is important here since rating is a subset of diary, and watched is a subset of rating.
+ *
+ * We want to process the items with the most information first.
+ */
+for (const entries of [diaryEntries, ratingEntries, watchedEntries]) {
+	for (const id in entries) {
+		//  Skip IDs that are already present, as they will already have the same data (and probably more).
+		if (id in allEntries) continue;
+
+		allEntries[id] = entries[id];
+	}
+}
+
+const outputFilePath = path.join(import.meta.dirname, "../content/movies");
+
+if (!existsSync(outputFilePath)) {
+	mkdirSync(outputFilePath);
+}
+
+// Write all of the processed entries to Markdown files.
+for (const id in allEntries) {
+	const data = allEntries[id];
+
+	const fileName = `${id}.md`;
+	const filePath = path.join(outputFilePath, fileName);
+
+	const contents = `---
+name: "${data.Name}"
+year: ${data.Year}
+rating: ${data.Rating ?? null}
+tags: ${data.Tags ?? null}
+uri: ${data["Letterboxd URI"]}
+rewatch: ${data.Rewatch}
+date: ${data["Watched Date"] || data.Date}
+---
+${data.Review ?? ""}`;
+
+	writeFileSync(filePath, contents);
+}

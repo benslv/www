@@ -23,13 +23,12 @@ export const collections = {
 		loader: glob({ pattern: "**/*.md", base: "./src/content/movies" }),
 		schema: z.object({
 			name: z.string(),
-			year: z.number(),
-			rating: z.number(),
+			year: z.coerce.number(),
+			rating: z.coerce.number().nullable(),
 			tags: z.string().nullable(),
 			uri: z.string(),
-			rewatch: z.boolean(),
-			dateWatched: z.date().nullable(),
-			dateLogged: z.date(),
+			rewatch: z.coerce.boolean(),
+			date: z.date(),
 		}),
 	}),
 };
