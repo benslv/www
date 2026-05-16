@@ -13,7 +13,9 @@ import {
 import path from "path";
 import {
 	diarySchema,
+	ratingSchema,
 	reviewSchema,
+	watchedSchema,
 	type DiarySchema,
 	type RatingSchema,
 	type ReviewSchema,
@@ -55,8 +57,6 @@ function importFile<
 
 		if (id in acc) {
 			throw new Error(`${id} ID already exists...`);
-			// console.log(`Skipping ${id}... already in entries.`);
-			// return acc;
 		}
 
 		acc[id] = parsedRow;
@@ -69,12 +69,12 @@ function importFile<
 
 const reviewEntries = importFile("reviews.csv", reviewSchema);
 const diaryEntries = importFile("diary.csv", diarySchema);
-// const ratingEntries = importFile("ratings.csv", ratingSchema);
-// const watchedEntries = importFile("watched.csv", watchedSchema);
+const ratingEntries = importFile("ratings.csv", ratingSchema);
+const watchedEntries = importFile("watched.csv", watchedSchema);
 
 // We can only guarantee that properties from WatchedSchema will exist but we
 // need to support all the possible properties up to the size of ReviewSchema
-type AnyEntry = DiarySchema & Partial<ReviewSchema>;
+type AnyEntry = WatchedSchema & Partial<ReviewSchema>;
 
 const allEntries: Record<string, AnyEntry> = {};
 
@@ -83,6 +83,12 @@ if (!existsSync(outputFilePath)) mkdirSync(outputFilePath);
 
 const existingFiles = new Set(
 	readdirSync(outputFilePath).map((name) => name.replace(/\.md$/, "")),
+);
+
+const seenNameYear = new Set(
+	[...Object.values(reviewEntries), ...Object.values(diaryEntries)].map(
+		(e) => `${e.Name}-${e.Year}`,
+	),
 );
 
 /**
@@ -95,14 +101,21 @@ const existingFiles = new Set(
 for (const entries of [
 	reviewEntries,
 	diaryEntries,
-	// ratingEntries,
-	// watchedEntries,
+	ratingEntries,
+	watchedEntries,
 ]) {
 	for (const id in entries) {
 		//  Skip IDs that are already present, as they will already have the same data (and probably more).
 		if (id in allEntries) continue;
-
 		if (existingFiles.has(id)) continue;
+
+		// Extra checks against `rating` and `watched` to only include movies that have never come up before
+		if (
+			entries === ratingEntries ||
+			(entries === watchedEntries &&
+				seenNameYear.has(`${entries[id].Name}-${entries[id].Year}`))
+		)
+			continue;
 
 		allEntries[id] = entries[id];
 	}
