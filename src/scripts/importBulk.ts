@@ -1,6 +1,15 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import { z } from "astro/zod";
 import { parse } from "csv-parse/sync";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import {
+	existsSync,
+	mkdirSync,
+	readdirSync,
+	readFileSync,
+	writeFileSync,
+} from "fs";
 import path from "path";
 import {
 	diarySchema,
@@ -12,6 +21,16 @@ import {
 	type ReviewSchema,
 	type WatchedSchema,
 } from "./letterboxdSchemas";
+
+import {
+	getFullImagePath,
+	ImageSizes,
+	TMDB,
+	TMDB_IMAGE_BASE_URL,
+	type Movie,
+	type TV,
+} from "@api-wrappers/tmdb-wrapper";
+import { downloadPoster } from "./fetchPosters";
 
 function slugify(title: string) {
 	return (
@@ -66,8 +85,6 @@ function importFile<
 	>((acc, row) => {
 		const parsedRow = schema.parse(row);
 
-		// const uri = parsedRow["Letterboxd URI"].replace("https://boxd.it/", "");
-
 		const id = slugify(
 			`${parsedRow.Date}-${parsedRow.Name}-${parsedRow.Year}`,
 		);
@@ -95,28 +112,36 @@ const watchedEntries = importFile("watched.csv", watchedSchema);
 // need to support all the possible properties up to the size of ReviewSchema
 type AnyEntry = WatchedSchema & Partial<ReviewSchema>;
 
-const allEntries: Record<string, AnyEntry> = structuredClone(reviewEntries);
+const allEntries: Record<string, AnyEntry> = {};
+
+const outputFilePath = path.join(import.meta.dirname, "../content/movies");
+if (!existsSync(outputFilePath)) mkdirSync(outputFilePath);
+
+const existingFiles = new Set(
+	readdirSync(outputFilePath).map((name) => name.replace(/\.md$/, "")),
+);
 
 /**
- * Iterate over diary, rating, and watched to fill in any gaps.
+ * Iterate over review, diary, rating, and watched to fill in any gaps.
  *
  * The order is important here since rating is a subset of diary, and watched is a subset of rating.
  *
  * We want to process the items with the most information first.
  */
-for (const entries of [diaryEntries, ratingEntries, watchedEntries]) {
+for (const entries of [
+	reviewEntries,
+	diaryEntries,
+	ratingEntries,
+	watchedEntries,
+]) {
 	for (const id in entries) {
 		//  Skip IDs that are already present, as they will already have the same data (and probably more).
 		if (id in allEntries) continue;
 
+		if (existingFiles.has(id)) continue;
+
 		allEntries[id] = entries[id];
 	}
-}
-
-const outputFilePath = path.join(import.meta.dirname, "../content/movies");
-
-if (!existsSync(outputFilePath)) {
-	mkdirSync(outputFilePath);
 }
 
 // Write all of the processed entries to Markdown files.
@@ -138,4 +163,73 @@ date: ${data["Watched Date"] || data.Date}
 ${data.Review ?? ""}`;
 
 	writeFileSync(filePath, contents);
+}
+
+const tmdb = new TMDB({
+	accessToken: process.env.TMDB_ACCESS_TOKEN!,
+	client: {
+		retry: {
+			maxAttempts: 5,
+			delayMs: 1000,
+		},
+	},
+});
+
+const posterOutputPath = path.join(
+	import.meta.dirname,
+	"../content/movies/posters",
+);
+
+if (!existsSync(posterOutputPath)) mkdirSync(posterOutputPath);
+
+let i = 0;
+// Need to slowly download the images now...
+for (const id in allEntries) {
+	const { Name, Year } = allEntries[id];
+
+	console.log(`Downloading ${i}/${Object.keys(allEntries).length}: ${Name}`);
+
+	const data = await tmdb.search.movies({
+		query: Name,
+		year: Year,
+	});
+
+	let item: Movie | TV = data.results[0];
+
+	if (!item) {
+		console.log(`No movie found for ${Name}`);
+
+		// Fallback and search TV if no movie found.
+		const data = await tmdb.search.tv({
+			query: Name,
+			year: Year,
+		});
+
+		item = data.results[0];
+
+		if (!item) {
+			console.log(`No item returned for ${Name} ${Year}`);
+			continue;
+		}
+	}
+
+	const posterPath = item.poster_path;
+
+	if (!posterPath) {
+		console.log(`No poster path for ${Name} ${Year}`);
+		continue;
+	}
+
+	const fullPosterUrl = getFullImagePath(
+		TMDB_IMAGE_BASE_URL,
+		ImageSizes.W92,
+		posterPath,
+	);
+
+	const fileName = slugify(`${Name}-${Year}`) + ".jpg";
+	const filePath = path.join(posterOutputPath, fileName);
+
+	await downloadPoster(fullPosterUrl, filePath);
+
+	i += 1;
 }
