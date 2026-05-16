@@ -5,8 +5,7 @@ rating: 4.5
 tags: vue york
 uri: https://boxd.it/2Ta02H
 rewatch: false
-dateWatched: 2022-05-31
-dateLogged: 2022-05-31
+date: 2022-05-31
 ---
 <i>"Alexa, play scramjet engine sounds (10 hours)"</i>
 

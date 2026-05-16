@@ -5,8 +5,7 @@ rating: 3.5
 tags: netflix
 uri: https://boxd.it/9sTPQB
 rewatch: false
-dateWatched: 2025-04-20
-dateLogged: 2025-04-20
+date: 2025-04-20
 ---
 Liked this! Really enjoyed the scenes with older computer hardware being cobbled together—that computer built in the apartment was really, really striking.
 

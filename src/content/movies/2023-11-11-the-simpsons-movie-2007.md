@@ -5,7 +5,6 @@ rating: 4
 tags: julia
 uri: https://boxd.it/58RZOp
 rewatch: false
-dateWatched: 2023-11-11
-dateLogged: 2023-11-11
+date: 2023-11-11
 ---
 I've seen this 3 or 4 times now and all of the jokes still land for me

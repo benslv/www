@@ -5,7 +5,6 @@ rating: 4
 tags: plex,julia,mum,dad
 uri: https://boxd.it/dQaoyj
 rewatch: false
-dateWatched: 2026-04-05
-dateLogged: 2026-04-05
+date: 2026-04-05
 ---
 I think this might be the best romcom 🥰

@@ -5,7 +5,6 @@ rating: 3.5
 tags: julia,disney+
 uri: https://boxd.it/6VWkcj
 rewatch: false
-dateWatched: 2024-07-22
-dateLogged: 2024-07-22
+date: 2024-07-22
 ---
 Everything I was expecting and hoping it would be. Very early-2000s in all the best ways. Just a very easy evening watch!

@@ -1,0 +1,10 @@
+---
+name: "Godzilla × Kong: The New Empire"
+year: 2024
+rating: 2
+tags: cineworld leicester square
+uri: https://boxd.it/69he7j
+rewatch: false
+date: 2024-03-27
+---
+Why did Mothra have to make that noise

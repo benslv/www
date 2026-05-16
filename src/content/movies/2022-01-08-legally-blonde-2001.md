@@ -2,10 +2,9 @@
 name: "Legally Blonde"
 year: 2001
 rating: 3.5
-tags: null
+tags: 
 uri: https://boxd.it/2s31lj
 rewatch: false
-dateWatched: 2022-01-08
-dateLogged: 2022-01-08
+date: 2022-01-08
 ---
 I was a bit distracted while watching this but I have it on good authority it was a good movie.

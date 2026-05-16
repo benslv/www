@@ -2,11 +2,10 @@
 name: "The Worst Person in the World"
 year: 2021
 rating: 4
-tags: null
+tags: 
 uri: https://boxd.it/2Os8F9
 rewatch: false
-dateWatched: 2022-05-05
-dateLogged: 2022-05-05
+date: 2022-05-05
 ---
 Yeah, I liked this! Felt like an extremely "real" movie, and was very personal and heartfelt. 
 

@@ -2,10 +2,9 @@
 name: "The Lord of the Rings: The Return of the King"
 year: 2003
 rating: 4
-tags: null
+tags: 
 uri: https://boxd.it/3HCpJR
 rewatch: false
-dateWatched: 2023-01-14
-dateLogged: 2023-01-14
+date: 2023-01-14
 ---
 LOTR peaked with The Two Towers imo but this was still (obviously) great

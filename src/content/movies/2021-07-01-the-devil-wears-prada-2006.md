@@ -1,0 +1,10 @@
+---
+name: "The Devil Wears Prada"
+year: 2006
+rating: 4
+tags: 
+uri: https://boxd.it/1XBZ8N
+rewatch: false
+date: 2021-06-30
+---
+I have no idea <i><b>when</b> </i>I watched this but I saw a trailer and instantly knew that I definitely did at some point, and had a great time too!
