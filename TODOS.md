@@ -1,4 +1,4 @@
-- [ ] Use TMDb API to fetch and save movie poster images (one big, one small?)
-- [ ] Update importBulk.ts to support incremental updates
-    - i.e. can run the file again and it will only add _new_ entries
-    - maybe also check whether anything need updating? (e.g. review/rating edits)
+- [x] Use TMDb API to fetch and save movie poster images (one big, one small?)
+- [x] Update importBulk.ts to support incremental updates
+    - [x] i.e. can run the file again and it will only add _new_ entries
+    - [ ] maybe also check whether anything need updating? (e.g. review/rating edits)
