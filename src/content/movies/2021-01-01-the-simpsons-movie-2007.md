@@ -1,9 +1,0 @@
----
-name: "The Simpsons Movie"
-year: 2007
-rating: null
-tags: null
-uri: https://boxd.it/6YU
-rewatch: undefined
-date: 2021-01-01
----

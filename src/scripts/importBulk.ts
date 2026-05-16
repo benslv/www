@@ -13,9 +13,7 @@ import {
 import path from "path";
 import {
 	diarySchema,
-	ratingSchema,
 	reviewSchema,
-	watchedSchema,
 	type DiarySchema,
 	type RatingSchema,
 	type ReviewSchema,
@@ -30,42 +28,8 @@ import {
 	type Movie,
 	type TV,
 } from "@api-wrappers/tmdb-wrapper";
+import { slugify } from "../utils/slugify";
 import { downloadPoster } from "./fetchPosters";
-
-function slugify(title: string) {
-	return (
-		title
-			// Strip double-quotes (CSV artifact)
-			.replace(/"/g, "")
-			// Strip apostrophes/single-quotes
-			.replace(/'/g, "")
-			// & → and
-			.replace(/\s*&\s*/g, " and ")
-			// × → x
-			.replace(/×/g, "x")
-			// Interpunct → hyphen
-			.replace(/·/g, "-")
-			// Slash → hyphen
-			.replace(/\//g, "-")
-			// Colon, en/em dash, asterisk, exclamation mark, comma → space
-			.replace(/[:\u2013\u2014*!,]/g, " ")
-			// Strip trailing period
-			.replace(/\.(\s*)$/, "$1")
-			// Normalise diacritics/macrons → ASCII
-			.normalize("NFD")
-			.replace(/[\u0300-\u036f]/g, "")
-			// Lowercase
-			.toLowerCase()
-			// Catch-all: remaining non-alphanumeric non-hyphen non-space → space
-			.replace(/[^a-z0-9\- ]/g, " ")
-			// Spaces → hyphens
-			.replace(/\s+/g, "-")
-			// Collapse multiple hyphens
-			.replace(/-+/g, "-")
-			// Strip leading/trailing hyphens
-			.replace(/^-+|-+$/g, "")
-	);
-}
 
 function importFile<
 	T extends WatchedSchema | RatingSchema | DiarySchema | ReviewSchema,
@@ -105,12 +69,12 @@ function importFile<
 
 const reviewEntries = importFile("reviews.csv", reviewSchema);
 const diaryEntries = importFile("diary.csv", diarySchema);
-const ratingEntries = importFile("ratings.csv", ratingSchema);
-const watchedEntries = importFile("watched.csv", watchedSchema);
+// const ratingEntries = importFile("ratings.csv", ratingSchema);
+// const watchedEntries = importFile("watched.csv", watchedSchema);
 
 // We can only guarantee that properties from WatchedSchema will exist but we
 // need to support all the possible properties up to the size of ReviewSchema
-type AnyEntry = WatchedSchema & Partial<ReviewSchema>;
+type AnyEntry = DiarySchema & Partial<ReviewSchema>;
 
 const allEntries: Record<string, AnyEntry> = {};
 
@@ -131,8 +95,8 @@ const existingFiles = new Set(
 for (const entries of [
 	reviewEntries,
 	diaryEntries,
-	ratingEntries,
-	watchedEntries,
+	// ratingEntries,
+	// watchedEntries,
 ]) {
 	for (const id in entries) {
 		//  Skip IDs that are already present, as they will already have the same data (and probably more).
@@ -222,7 +186,7 @@ for (const id in allEntries) {
 
 	const fullPosterUrl = getFullImagePath(
 		TMDB_IMAGE_BASE_URL,
-		ImageSizes.W92,
+		ImageSizes.W185,
 		posterPath,
 	);
 
