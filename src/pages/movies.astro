@@ -23,8 +23,11 @@ const posters = import.meta.glob<{ default: ImageMetadata }>("./*.jpg", {
 				const poster = posters[imageSrc];
 				return (
 					<>
-						{poster ? <Image src={poster()} alt="" /> : null}
-						{/* <a href={`/movies/${id}`}>{data.name}</a> */}
+						{poster ? (
+							<a href={`/movies/${id}`}>
+								<Image src={poster()} alt={data.name} />
+							</a>
+						) : null}
 					</>
 				);
 			})

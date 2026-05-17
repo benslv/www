@@ -7,26 +7,28 @@ import keystatic from "@keystatic/astro";
 
 import netlify from "@astrojs/netlify";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
-	integrations: [react(), markdoc(), keystatic()],
-	site: "https://bensilverman.co.uk",
-	adapter: netlify(),
-	prefetch: true,
-	fonts: [
-		{
-			provider: fontProviders.fontsource(),
-			name: "SN Pro",
-			cssVariable: "--sn-pro",
-			weights: ["400 700"],
-			styles: ["normal", "italic"],
-		},
-		{
-			provider: fontProviders.fontsource(),
-			name: "JetBrains Mono",
-			cssVariable: "--jetbrains-mono",
-			weights: ["400"],
-			styles: ["normal"],
-		},
-	],
+    integrations: [react(), markdoc(), keystatic(), icon()],
+    site: "https://bensilverman.co.uk",
+    adapter: netlify(),
+    prefetch: true,
+    fonts: [
+        {
+            provider: fontProviders.fontsource(),
+            name: "SN Pro",
+            cssVariable: "--sn-pro",
+            weights: ["400 700"],
+            styles: ["normal", "italic"],
+        },
+        {
+            provider: fontProviders.fontsource(),
+            name: "JetBrains Mono",
+            cssVariable: "--jetbrains-mono",
+            weights: ["400"],
+            styles: ["normal"],
+        },
+    ],
 });
