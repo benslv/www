@@ -22,5 +22,6 @@ export async function GET(context: APIContext) {
 			link: `/posts/${post.id}`,
 			content: post.body && marked.parse(post.body, { async: false }),
 		})),
+		stylesheet: "/rss/styles.xsl",
 	});
 }
