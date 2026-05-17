@@ -24,7 +24,7 @@ const posters = import.meta.glob<{ default: ImageMetadata }>("./*.jpg", {
 });
 
 const posterSrc = `./${slugify(`${movie.data.name} ${movie.data.year}`)}.jpg`;
-const poster = posters[posterSrc]();
+const poster = posters[posterSrc];
 
 const rating = movie.data.rating || 0;
 const fullStars = Math.floor(rating);
@@ -37,11 +37,15 @@ const transitionName = `${movie.data.date}-${movie.data.name}-${movie.data.year}
 
 <Layout title={movie.data.name}>
 	<div class="grid">
-		<Image
-			src={poster}
-			alt={movie.data.name}
-			transition:name={transitionName}
-		/>
+		{
+			poster && (
+				<Image
+					src={poster()}
+					alt={movie.data.name}
+					transition:name={transitionName}
+				/>
+			)
+		}
 		<div>
 			<p class="date">
 				{new Intl.DateTimeFormat("en-GB").format(movie.data.date)}
