@@ -19,6 +19,7 @@ const posters = import.meta.glob<{ default: ImageMetadata }>("./*.jpg", {
 	<div id="movieList">
 		{
 			movies.map(({ id, data }) => {
+				const transitionName = `${data.date}-${data.name}-${data.year}`;
 				const imageSrc = `./${slugify(`${data.name} ${data.year}`)}.jpg`;
 
 				const highlight = (data.rating ?? 0) > 4;
@@ -31,7 +32,11 @@ const posters = import.meta.glob<{ default: ImageMetadata }>("./*.jpg", {
 								href={`/movies/${id}`}
 								class:list={[{ highlight }]}
 							>
-								<Image src={poster()} alt={data.name} />
+								<Image
+									src={poster()}
+									alt={data.name}
+									transition:name={transitionName}
+								/>
 							</a>
 						) : null}
 					</>

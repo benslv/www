@@ -31,11 +31,17 @@ const fullStars = Math.floor(rating);
 const halfStar = fullStars !== rating;
 
 const { Content } = await render(movie);
+
+const transitionName = `${movie.data.date}-${movie.data.name}-${movie.data.year}`;
 ---
 
 <Layout title={movie.data.name}>
 	<div class="grid">
-		<Image src={poster} alt={movie.data.name} />
+		<Image
+			src={poster}
+			alt={movie.data.name}
+			transition:name={transitionName}
+		/>
 		<div>
 			<p class="date">
 				{new Intl.DateTimeFormat("en-GB").format(movie.data.date)}

@@ -2,6 +2,7 @@
 import { Font } from "astro:assets";
 
 import { Image } from "astro:assets";
+import { ClientRouter } from "astro:transitions";
 import GlobalCSS from "../components/GlobalCSS.astro";
 import Navigation from "../components/Navigation.astro";
 
@@ -49,6 +50,8 @@ if (image && !images[image])
 		<Font cssVariable="--sn-pro" preload />
 		<Font cssVariable="--jetbrains-mono" preload />
 		<GlobalCSS />
+
+		<ClientRouter />
 	</head>
 	<body>
 		<div class="container">
