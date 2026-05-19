@@ -37,15 +37,7 @@ const transitionName = `${movie.data.date}-${movie.data.name}-${movie.data.year}
 
 <Layout title={movie.data.name}>
 	<div class="grid">
-		{
-			poster && (
-				<Image
-					src={poster()}
-					alt={movie.data.name}
-					transition:name={transitionName}
-				/>
-			)
-		}
+		{poster && <Image src={poster()} alt={movie.data.name} />}
 		<div>
 			<p class="date">
 				{new Intl.DateTimeFormat("en-GB").format(movie.data.date)}

@@ -32,11 +32,7 @@ const posters = import.meta.glob<{ default: ImageMetadata }>("./*.jpg", {
 								href={`/movies/${id}`}
 								class:list={[{ highlight }]}
 							>
-								<Image
-									src={poster()}
-									alt={data.name}
-									transition:name={transitionName}
-								/>
+								<Image src={poster()} alt={data.name} />
 							</a>
 						) : null}
 					</>
